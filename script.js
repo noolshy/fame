@@ -10,9 +10,19 @@ const members = [
         avatar: "img/avatar1.png",
         verified: true,
         pinned: true,
+        
+        // Основные ссылки
         project: "https://t.me/NOOLSHY",
         telegram: "tgzorf",
         price: "https://noolshy.github.io/market/",
+        
+        // Добавленные пункты для ссылок:
+        chat: "https://t.me/NOOLSHY_CHAT",
+        market: "https://noolshy.github.io/market/",
+        fameList: "https://noolshy.github.io/fame/",
+        github: "https://github.com/noolshy",
+        // Для добавления других ссылок - просто добавьте их как свойства объекта
+        
         joinDate: "2024-01-08",
         activity: "Постоянная",
         posts: 150,
@@ -513,16 +523,28 @@ function showProfile(memberId) {
     
     // Основные кнопки
     let mainButtons = createSocialButton('fab fa-telegram', 'Написать в ЛС', `https://t.me/${member.telegram}`, 'telegram');
-    if (member.project) mainButtons += createSocialButton('fas fa-external-link-alt', 'Основной канал', member.project);
+    if (member.project) mainButtons += createSocialButton('fas fa-external-link-alt', 'Основной канал', member.project, 'telegram');
     if (member.chat) mainButtons += createSocialButton('fas fa-comments', 'Чат', member.chat, 'telegram');
+    if (member.market) mainButtons += createSocialButton('fas fa-shopping-cart', 'Маркет', member.market);
+    if (member.fameList) mainButtons += createSocialButton('fas fa-list', 'Фейм лист', member.fameList);
+    if (member.github) mainButtons += createSocialButton('fab fa-github', 'GitHub', member.github);
     
     // Дополнительные кнопки
     let extraButtons = '';
-    const extraLinks = {
+    
+    // Все возможные ссылки с иконками (система готова для добавления новых ссылок)
+    const allPossibleLinks = {
+        'price': {icon: 'fas fa-tag', text: 'Прайс'},
+        'priceList': {icon: 'fas fa-tags', text: 'Прайс-лист'},
+        'market': {icon: 'fas fa-shopping-cart', text: 'Маркет'},
         'tiktok': {icon: 'fab fa-tiktok', text: 'TikTok'},
+        'youtube': {icon: 'fab fa-youtube', text: 'YouTube'},
+        'yt': {icon: 'fab fa-youtube', text: 'YouTube'},
+        'discord': {icon: 'fab fa-discord', text: 'Discord'},
+        'vk': {icon: 'fab fa-vk', text: 'VK'},
+        'gift': {icon: 'fas fa-gift', text: 'Подарок'},
         'website': {icon: 'fas fa-globe', text: 'Сайт'},
         'reputation': {icon: 'fas fa-star', text: 'Репутация'},
-        'priceList': {icon: 'fas fa-tag', text: 'Прайс'},
         'work': {icon: 'fas fa-briefcase', text: 'Ворк'},
         'forum': {icon: 'fas fa-users', text: 'Форум'},
         'def': {icon: 'fas fa-shield-alt', text: 'Деф'},
@@ -531,9 +553,10 @@ function showProfile(memberId) {
         'private': {icon: 'fas fa-lock', text: 'Приват'}
     };
     
-    Object.keys(extraLinks).forEach(key => {
+    // Проверяем каждую возможную ссылку в объекте участника
+    Object.keys(allPossibleLinks).forEach(key => {
         if (member[key]) {
-            extraButtons += createSocialButton(extraLinks[key].icon, extraLinks[key].text, member[key]);
+            extraButtons += createSocialButton(allPossibleLinks[key].icon, allPossibleLinks[key].text, member[key]);
         }
     });
     
