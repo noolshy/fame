@@ -10,20 +10,16 @@ const members = [
         avatar: "img/avatar1.png",
         verified: true,
         pinned: true,
-        
-        // Основные ссылки
         project: "https://t.me/NOOLSHY",
         telegram: "tgzorf",
         price: "https://noolshy.github.io/market/",
-        
-        // Добавленные пункты для ссылок:
         chat: "https://t.me/NOOLSHY_CHAT",
         market: "https://noolshy.github.io/market/",
         fameList: "https://noolshy.github.io/fame/",
         github: "https://github.com/noolshy",
         // Для добавления других ссылок - просто добавьте их как свойства объекта
         
-        joinDate: "2024-01-08",
+        joinDate: "2026-01-08",
         activity: "Постоянная",
         posts: 150,
         followers: 2500,
@@ -38,7 +34,51 @@ const members = [
             price: "https://noolshy.github.io/market/"
         }
     }
+    const members = [
+    {
+        id: 2,
+        nickname: "francisco",
+        username: "@pvpfrancisco",
+        category: "Медийка",
+        role: "Медийки",
+        description: "в 2018 году  состояла в комьюнити ВКонтакте, в стаке у рейзовых, в 2024 году перешла в комьюнити телеграмма, первой моей ликой была Хитрова, а дальше начали появляться личности как мира маньяк, антифобова и тд, и постепенно начала набирать фейм,сейчас меня считают средним феймовым человеком",
+        avatar: "img/avatar2.jng",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+LS2wWjAg8dYxOTNi",
+        joinDate: "2026-01-08",
+        activity: "Постоянная",
+         details: "Медийная личность в NoolShy Fame.",
+        skills: ["Медийная личность — это человек который имеет большую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+            telegram: "@tgzorf",
+            project: "https://t.me/NOOLSHY",
+        }
+    }
+      const members = [
+    {
+         id: 3,
+        nickname: "francisco младший",
+        username: "@oexwu",
+        category: "Медийка",
+        role: "Медийки",
+        description: "пришел в км  2021 году состоял в Клане Министерство обороны первая личность была Суцидальная кома начали появляться личности Курилов,Линдерсон,Киллов младший,Киллеров,И начал набирать набирать фейм сейчас меня считаю Средним Феймовым человеком",
+        avatar: "img/avatar3.jng",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+lxGpVXheDIQ2OTRi",
+        telegram: "oexwu",       
+        joinDate: "2026-01-08",
+        activity: "Постоянная",
+        details: "Медийная личность в NoolShy Fame.",
+        skills: ["Медийная личность — это человек который имеет большую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+            telegram: "@oexwu",
+            project: "https://t.me/+lxGpVXheDIQ2OTRi",
+        }
+    }
 ];
+
 
 // Массив всех фонов
 const allBackgrounds = [
