@@ -33,8 +33,7 @@ const members = [
             project: "https://t.me/NOOLSHY",
             price: "https://noolshy.github.io/market/"
         }
-    }
-    const members = [
+    },
     {
         id: 2,
         nickname: "francisco",
@@ -54,8 +53,7 @@ const members = [
             telegram: "@tgzorf",
             project: "https://t.me/NOOLSHY",
         }
-    }
-      const members = [
+    },
     {
          id: 3,
         nickname: "francisco младший",
