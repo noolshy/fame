@@ -2,17 +2,17 @@
 const members = [
     {
         id: 1,
-        nickname: "NoolShy",
-        username: "@NOOLSHY",
+        nickname: "зорф",
+        username: "@tgzorf",
         category: "Владелец",
         role: "Владелец",
-        description: "Владелец NoolShy Fame. Вход 50 зв, галочка 30зв, закреп 50зв.",
+        description: "Владелец зорф Fame. Вход 50 зв, галочка 30зв, закреп 50зв.",
         avatar: "img/avatar1.png",
         verified: true,
         pinned: true,
         project: "https://t.me/NOOLSHY",
-        telegram: "NOOLSHY",
-        chat: "https://t.me/NOOLSHY",
+        telegram: "tgzorf",
+        price: "https://noolshy.github.io/market/",
         joinDate: "2024-01-08",
         activity: "Постоянная",
         posts: 150,
@@ -23,9 +23,9 @@ const members = [
         details: "Создатель и владелец NoolShy Fame. Занимаюсь развитием сообщества и модерацией. Отвечаю на вопросы по поводу добавления в список и других услуг.",
         skills: ["Администрирование", "Модерация", "Развитие сообщества"],
         socials: {
-            telegram: "@NOOLSHY",
+            telegram: "@tgzorf",
             project: "https://t.me/NOOLSHY",
-            chat: "https://t.me/NOOLSHY"
+            price: "https://noolshy.github.io/market/"
         }
     }
 ];
