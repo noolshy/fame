@@ -50,8 +50,8 @@ const members = [
          details: "Медийная личность в NoolShy Fame.",
         skills: ["Медийная личность — это человек который имеет большую узнаваемость в комьюнити", "Развитие личности"],
         socials: {
-            telegram: "@tgzorf",
-            project: "https://t.me/NOOLSHY",
+            telegram: "@pvpfrancisco",
+            project: "https://t.me/+LS2wWjAg8dYxOTNi",
         }
     },
     {
@@ -74,7 +74,27 @@ const members = [
             telegram: "@oexwu",
             project: "https://t.me/+lxGpVXheDIQ2OTRi",
         }
-    }
+    },
+     {
+        id: 4,
+        nickname: "madonna maniac",
+        username: "@madonnamaniac",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "Пришел в комьюннити в начале 22 года,состоял в проекте security team,первой личностью была министров,также валиднул амнезию/апатию,личности на которых поднимал фейм были как: кансамольский,психомиров,интернет мардер,на данный момент считаюсь средним феймом.",
+        avatar: "img/avatar4.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+WY-yRFYVxhJjNTFi",
+        joinDate: "2026-01-08",
+        activity: "Постоянная",
+         details: "madonna maniac личность в NoolShy Fame.",
+        skills: ["madonna maniac — это человек который имеет не большую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+            telegram: "@madonnamaniac",
+            project: "https://t.me/+WY-yRFYVxhJjNTFi",
+        }
+    },
 ];
 
 
