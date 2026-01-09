@@ -96,7 +96,8 @@ const members = [
         }
     },
 ];
-
+// Ссылка на бота для заявок
+const BOT_LINK = "https://t.me/NoolShyfame_bot";
 
 // Массив всех фонов
 const allBackgrounds = [
