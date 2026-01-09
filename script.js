@@ -1217,130 +1217,158 @@ function switchSection(sectionId) {
         }
     });
 }
-// ==================== ФУНКЦИЯ ДЛЯ КНОПКИ ЗАЯВКИ ====================
+// ==================== КНОПКА ЗАЯВКИ ====================
+const BOT_LINK = "https://t.me/NoolShyfame_bot";
+
 function initApplicationButton() {
-    console.log('Инициализация кнопки заявки...');
+    console.log('🔘 Инициализация кнопки заявки...');
     
-    const applyBtn = document.getElementById('apply-btn');
-    
-    if (!applyBtn) {
-        console.error('Кнопка заявки не найдена');
+    // Создаем кнопку если её нет
+    const membersContainer = document.getElementById('members-container');
+    if (!membersContainer) {
+        console.error('Не найден members-container');
         return;
     }
     
-    applyBtn.addEventListener('click', function() {
-        console.log('Клик по кнопке заявки');
-        
-        // Создаем модальное окно
-        const modal = document.createElement('div');
-        modal.className = 'modal active';
-        modal.style.display = 'flex';
-        
-        modal.innerHTML = `
-            <div class="modal-content neon-flow" style="max-width: 500px;">
-                <div class="modal-header">
-                    <h2 class="text-neon-flow"><i class="fas fa-paper-plane"></i> Заявка на вступление</h2>
-                    <button class="close-modal">&times;</button>
+    // Проверяем, не добавлена ли уже кнопка
+    if (document.getElementById('apply-btn')) {
+        console.log('Кнопка уже существует');
+        return;
+    }
+    
+    // Создаем контейнер для кнопки
+    const appContainer = document.createElement('div');
+    appContainer.className = 'application-container';
+    appContainer.innerHTML = `
+        <button class="apply-btn neon-flow" id="apply-btn">
+            <i class="fas fa-paper-plane"></i> Отправить заявку
+        </button>
+        <p class="apply-info">Хочешь попасть в список? Отправь заявку через нашего бота!</p>
+    `;
+    
+    // Вставляем перед контейнером участников
+    membersContainer.parentNode.insertBefore(appContainer, membersContainer);
+    
+    // Вешаем обработчик
+    document.getElementById('apply-btn').addEventListener('click', openApplicationModal);
+    
+    console.log('✅ Кнопка заявки создана');
+}
+
+function openApplicationModal() {
+    console.log('📨 Открытие модалки заявки');
+    
+    // Создаем модальное окно
+    const modal = document.createElement('div');
+    modal.className = 'modal active';
+    modal.style.display = 'flex';
+    
+    modal.innerHTML = `
+        <div class="modal-content neon-flow" style="max-width: 500px;">
+            <div class="modal-header">
+                <h2 class="text-neon-flow"><i class="fas fa-paper-plane"></i> Заявка на вступление</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div style="padding: 30px; text-align: center;">
+                <div class="telegram-icon" style="font-size: 4rem; color: #0088cc; margin-bottom: 20px;">
+                    <i class="fab fa-telegram"></i>
                 </div>
-                <div style="padding: 30px; text-align: center;">
-                    <div class="telegram-icon" style="font-size: 4rem; color: #0088cc; margin-bottom: 20px;">
-                        <i class="fab fa-telegram"></i>
-                    </div>
-                    
-                    <p style="margin-bottom: 20px; font-size: 1.1rem; line-height: 1.6;">
-                        Чтобы отправить заявку на вступление в NoolShy Fame,<br>
-                        напишите нашему боту в Telegram:
-                    </p>
-                    
-                    <div class="telegram-link" style="margin: 30px 0;">
-                        <a href="${BOT_LINK}" target="_blank" 
-                           class="telegram-btn" 
-                           style="display: inline-flex; align-items: center; gap: 15px;
-                                  padding: 15px 30px; background: rgba(0, 136, 204, 0.1);
-                                  color: #0088cc; border-radius: 25px; text-decoration: none;
-                                  font-size: 1.2rem; border: 2px solid rgba(0, 136, 204, 0.3);
-                                  transition: all 0.3s;">
-                            <i class="fab fa-telegram" style="font-size: 1.5rem;"></i>
-                            <span>@NoolShyfame_bot</span>
-                        </a>
-                    </div>
-                    
-                    <p style="color: #888; margin-top: 20px; font-size: 0.9rem;">
-                        Нажмите на кнопку выше или скопируйте юзернейм
-                    </p>
-                    
-                    <div class="copy-section" style="margin-top: 25px; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 10px;">
-                        <p style="margin-bottom: 10px; color: #aaa;">Или скопируйте:</p>
-                        <div style="display: flex; gap: 10px; justify-content: center;">
-                            <input type="text" value="@NoolShyfame_bot" readonly 
-                                   style="flex: 1; padding: 10px; background: #1a1a1a; 
-                                          border: 1px solid #333; border-radius: 5px; 
-                                          color: #fff; text-align: center;">
-                            <button class="copy-btn" 
-                                    style="padding: 10px 20px; background: rgba(0,136,204,0.2); 
-                                           border: 1px solid #0088cc; border-radius: 5px; 
-                                           color: #0088cc; cursor: pointer;">
-                                Копировать
-                            </button>
-                        </div>
+                
+                <p style="margin-bottom: 20px; font-size: 1.1rem; line-height: 1.6;">
+                    Чтобы отправить заявку на вступление в NoolShy Fame,<br>
+                    напишите нашему боту в Telegram:
+                </p>
+                
+                <div class="telegram-link" style="margin: 30px 0;">
+                    <a href="${BOT_LINK}" target="_blank" 
+                       class="telegram-btn" 
+                       style="display: inline-flex; align-items: center; gap: 15px;
+                              padding: 15px 30px; background: rgba(0, 136, 204, 0.1);
+                              color: #0088cc; border-radius: 25px; text-decoration: none;
+                              font-size: 1.2rem; border: 2px solid rgba(0, 136, 204, 0.3);
+                              transition: all 0.3s;">
+                        <i class="fab fa-telegram" style="font-size: 1.5rem;"></i>
+                        <span>@NoolShyfame_bot</span>
+                    </a>
+                </div>
+                
+                <p style="color: #888; margin-top: 20px; font-size: 0.9rem;">
+                    Нажмите на кнопку выше или скопируйте юзернейм
+                </p>
+                
+                <div class="copy-section" style="margin-top: 25px; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 10px;">
+                    <p style="margin-bottom: 10px; color: #aaa;">Или скопируйте:</p>
+                    <div style="display: flex; gap: 10px; justify-content: center;">
+                        <input type="text" value="@NoolShyfame_bot" readonly 
+                               style="flex: 1; padding: 10px; background: #1a1a1a; 
+                                      border: 1px solid #333; border-radius: 5px; 
+                                      color: #fff; text-align: center;">
+                        <button class="copy-btn" 
+                                style="padding: 10px 20px; background: rgba(0,136,204,0.2); 
+                                       border: 1px solid #0088cc; border-radius: 5px; 
+                                       color: #0088cc; cursor: pointer;">
+                            Копировать
+                        </button>
                     </div>
                 </div>
             </div>
-        `;
-        
-        document.body.appendChild(modal);
-        
-        // Закрытие модалки
-        modal.querySelector('.close-modal').onclick = () => {
-            modal.remove();
-        };
-        
-        modal.onclick = (e) => {
-            if (e.target === modal) {
-                modal.remove();
-            }
-        };
-        
-        // Копирование юзернейма
-        const copyBtn = modal.querySelector('.copy-btn');
-        const copyInput = modal.querySelector('input[type="text"]');
-        
-        copyBtn.onclick = () => {
-            copyInput.select();
-            copyInput.setSelectionRange(0, 99999);
-            
-            try {
-                navigator.clipboard.writeText(copyInput.value);
-                copyBtn.textContent = '✓ Скопировано';
-                copyBtn.style.background = 'rgba(0,170,0,0.2)';
-                copyBtn.style.borderColor = '#0a0';
-                copyBtn.style.color = '#0a0';
-                
-                setTimeout(() => {
-                    copyBtn.textContent = 'Копировать';
-                    copyBtn.style.background = 'rgba(0,136,204,0.2)';
-                    copyBtn.style.borderColor = '#0088cc';
-                    copyBtn.style.color = '#0088cc';
-                }, 2000);
-            } catch (err) {
-                console.error('Ошибка копирования:', err);
-            }
-        };
-        
-        // Анимация кнопки Telegram
-        const telegramBtn = modal.querySelector('.telegram-btn');
-        telegramBtn.onmouseenter = () => {
-            telegramBtn.style.transform = 'translateY(-3px)';
-            telegramBtn.style.boxShadow = '0 10px 20px rgba(0,136,204,0.3)';
-        };
-        
-        telegramBtn.onmouseleave = () => {
-            telegramBtn.style.transform = 'translateY(0)';
-            telegramBtn.style.boxShadow = 'none';
-        };
-        
-        console.log('Модальное окно заявки открыто');
-    });
+        </div>
+    `;
     
-    console.log('Кнопка заявки инициализирована');
+    document.body.appendChild(modal);
+    
+    // Закрытие модалки
+    modal.querySelector('.close-modal').onclick = () => {
+        modal.remove();
+    };
+    
+    modal.onclick = (e) => {
+        if (e.target === modal) {
+            modal.remove();
+        }
+    };
+    
+    // Копирование юзернейма
+    const copyBtn = modal.querySelector('.copy-btn');
+    const copyInput = modal.querySelector('input[type="text"]');
+    
+    copyBtn.onclick = () => {
+        copyInput.select();
+        copyInput.setSelectionRange(0, 99999);
+        
+        try {
+            navigator.clipboard.writeText(copyInput.value);
+            copyBtn.textContent = '✓ Скопировано';
+            copyBtn.style.background = 'rgba(0,170,0,0.2)';
+            copyBtn.style.borderColor = '#0a0';
+            copyBtn.style.color = '#0a0';
+            
+            setTimeout(() => {
+                copyBtn.textContent = 'Копировать';
+                copyBtn.style.background = 'rgba(0,136,204,0.2)';
+                copyBtn.style.borderColor = '#0088cc';
+                copyBtn.style.color = '#0088cc';
+            }, 2000);
+        } catch (err) {
+            console.error('Ошибка копирования:', err);
+        }
+    };
+    
+    // Анимация кнопки Telegram
+    const telegramBtn = modal.querySelector('.telegram-btn');
+    telegramBtn.onmouseenter = () => {
+        telegramBtn.style.transform = 'translateY(-3px)';
+        telegramBtn.style.boxShadow = '0 10px 20px rgba(0,136,204,0.3)';
+    };
+    
+    telegramBtn.onmouseleave = () => {
+        telegramBtn.style.transform = 'translateY(0)';
+        telegramBtn.style.boxShadow = 'none';
+    };
 }
+
+// Запускаем создание кнопки после загрузки DOM
+document.addEventListener('DOMContentLoaded', function() {
+    // Ждем немного чтобы все загрузилось
+    setTimeout(initApplicationButton, 1000);
+});
