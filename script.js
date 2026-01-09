@@ -1,4 +1,4 @@
-// ДАННЫЕ УЧАСТНИКОВ - 1 УЧАСТНИК
+// Данные участников
 const members = [
     {
         id: 1,
@@ -17,8 +17,6 @@ const members = [
         market: "https://noolshy.github.io/market/",
         fameList: "https://noolshy.github.io/fame/",
         github: "https://github.com/noolshy",
-        // Для добавления других ссылок - просто добавьте их как свойства объекта
-        
         joinDate: "2026-01-08",
         activity: "Постоянная",
         posts: 150,
@@ -40,14 +38,14 @@ const members = [
         username: "@pvpfrancisco",
         category: "Медийка",
         role: "Медийки",
-        description: "в 2018 году  состояла в комьюнити ВКонтакте, в стаке у рейзовых, в 2024 году перешла в комьюнити телеграмма, первой моей ликой была Хитрова, а дальше начали появляться личности как мира маньяк, антифобова и тд, и постепенно начала набирать фейм,сейчас меня считают средним феймовым человеком",
+        description: "в 2018 году состояла в комьюнити ВКонтакте, в стаке у рейзовых, в 2024 году перешла в комьюнити телеграмма...",
         avatar: "img/avatar2.png",
         verified: false,
         pinned: false,
         project: "https://t.me/+LS2wWjAg8dYxOTNi",
         joinDate: "2026-01-08",
         activity: "Постоянная",
-         details: "Медийная личность в NoolShy Fame.",
+        details: "Медийная личность в NoolShy Fame.",
         skills: ["Медийная личность — это человек который имеет большую узнаваемость в комьюнити", "Развитие личности"],
         socials: {
             telegram: "@pvpfrancisco",
@@ -55,17 +53,17 @@ const members = [
         }
     },
     {
-         id: 3,
+        id: 3,
         nickname: "francisco младший",
         username: "@oexwu",
         category: "Медийка",
         role: "Медийки",
-        description: "пришел в км  2021 году состоял в Клане Министерство обороны первая личность была Суцидальная кома начали появляться личности Курилов,Линдерсон,Киллов младший,Киллеров,И начал набирать набирать фейм сейчас меня считаю Средним Феймовым человеком",
+        description: "пришел в км 2021 году состоял в Клане Министерство обороны...",
         avatar: "img/avatar3.png",
         verified: false,
         pinned: false,
         project: "https://t.me/+lxGpVXheDIQ2OTRi",
-        telegram: "oexwu",       
+        telegram: "oexwu",
         joinDate: "2026-01-08",
         activity: "Постоянная",
         details: "Медийная личность в NoolShy Fame.",
@@ -75,38 +73,26 @@ const members = [
             project: "https://t.me/+lxGpVXheDIQ2OTRi",
         }
     },
-     {
+    {
         id: 4,
         nickname: "madonna maniac",
         username: "@madonnamaniac",
         category: "Средний фейм",
         role: "Средний фейм",
-        description: "Пришел в комьюннити в начале 22 года,состоял в проекте security team,первой личностью была министров,также валиднул амнезию/апатию,личности на которых поднимал фейм были как: кансамольский,психомиров,интернет мардер,на данный момент считаюсь средним феймом.",
+        description: "Пришел в комьюннити в начале 22 года,состоял в проекте security team...",
         avatar: "img/avatar4.png",
         verified: false,
         pinned: false,
         project: "https://t.me/+WY-yRFYVxhJjNTFi",
         joinDate: "2026-01-08",
         activity: "Постоянная",
-         details: "madonna maniac личность в NoolShy Fame.",
-        skills: ["madonna maniac — это человек который имеет не большую узнаваемость в комьюнити", "Развитие личности"],
+        details: "madonna maniac личность в NoolShy Fame.",
+        skills: ["Средний фейм — это человек который имеет не большую узнаваемость в комьюнити", "Развитие личности"],
         socials: {
             telegram: "@madonnamaniac",
             project: "https://t.me/+WY-yRFYVxhJjNTFi",
         }
     },
-];
-// Ссылка на бота для заявок
-const BOT_LINK = "https://t.me/NoolShyfame_bot";
-
-// Массив всех фонов
-const allBackgrounds = [
-    'particles', 'waves', 'pulse', 'hooks', 'circuit',
-    'grid', 'dots', 'lines', 'hexagon', 'triangles',
-    'squares', 'circles', 'nebula', 'galaxy', 'cosmic',
-    'stardust', 'matrix', 'cyberpunk', 'circuit2', 'glitch',
-    'rain', 'fire', 'water', 'wind', 'vortex',
-    'spiral', 'radar', 'sonar'
 ];
 
 // Текущие настройки
@@ -114,143 +100,14 @@ let currentTheme = 'dark';
 let currentNeonColor = '#808080';
 let currentNeonIntensity = 0.5;
 let currentNeonSpeed = 5;
-let currentAnimatedBg = 'hooks';
-let currentBgSpeed = 10;
-let currentBgOpacity = 0.5;
 
 // Инициализация
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM загружен, инициализация...');
     initNavigation();
     initMembers();
-    initSnow();
     initSettings();
-    initNeonControls();
-    initAnimatedBg();
-    initModals();
-    loadSavedSettings();
-    initDynamicNeon();
-    initAllAvatars();
-    
-    generateBgGrid();
 });
-
-// Генерация сетки фонов
-function generateBgGrid() {
-    const grid = document.querySelector('.animated-bg-grid');
-    if (!grid) {
-        console.log('Сетка фонов не найдена');
-        return;
-    }
-    
-    grid.innerHTML = '';
-    
-    allBackgrounds.forEach(bg => {
-        const option = document.createElement('div');
-        option.className = `animated-bg-option ${bg === currentAnimatedBg ? 'active' : ''}`;
-        option.dataset.bg = bg;
-        
-        option.innerHTML = `
-            <div class="bg-preview ${bg}-bg"></div>
-            <span>${getBgName(bg)}</span>
-        `;
-        
-        option.addEventListener('click', function() {
-            document.querySelectorAll('.animated-bg-option').forEach(opt => {
-                opt.classList.remove('active');
-            });
-            this.classList.add('active');
-            currentAnimatedBg = this.dataset.bg;
-            console.log('Выбран фон:', currentAnimatedBg);
-        });
-        
-        grid.appendChild(option);
-    });
-    console.log('Сетка фонов сгенерирована');
-}
-
-// Получение читаемого имени фона
-function getBgName(bg) {
-    const names = {
-        'particles': 'Частицы', 'waves': 'Волны', 'pulse': 'Пульсация',
-        'hooks': 'Зацепки', 'circuit': 'Микросхемы', 'grid': 'Сетка',
-        'dots': 'Точки', 'lines': 'Линии', 'hexagon': 'Шестиугольники',
-        'triangles': 'Треугольники', 'squares': 'Квадраты', 'circles': 'Круги',
-        'nebula': 'Туманность', 'galaxy': 'Галактика', 'cosmic': 'Космос',
-        'stardust': 'Звёздная пыль', 'matrix': 'Матрица', 'cyberpunk': 'Киберпанк',
-        'circuit2': 'Микросхема 2', 'glitch': 'Глитч', 'rain': 'Дождь',
-        'fire': 'Огонь', 'water': 'Вода', 'wind': 'Ветер',
-        'vortex': 'Воронка', 'spiral': 'Спираль', 'radar': 'Радар',
-        'sonar': 'Сонар'
-    };
-    
-    return names[bg] || bg;
-}
-
-// Функция для безопасной загрузки изображения
-function loadAvatarWithFallback(imgElement, src, nickname) {
-    return new Promise((resolve) => {
-        const img = new Image();
-        
-        img.onload = () => {
-            imgElement.src = src;
-            imgElement.style.opacity = '1';
-            resolve(true);
-        };
-        
-        img.onerror = () => {
-            // Создаем SVG аватар с первой буквой ника
-            const initial = nickname.charAt(0).toUpperCase();
-            const color = generateColorFromNickname(nickname);
-            
-            const svg = `
-                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-                    <rect width="100" height="100" fill="${color}" rx="50"/>
-                    <text x="50" y="50" text-anchor="middle" dy="0.35em" 
-                          font-family="Arial, sans-serif" font-size="40" 
-                          font-weight="bold" fill="#fff">${initial}</text>
-                </svg>
-            `;
-            
-            imgElement.src = 'data:image/svg+xml;base64,' + btoa(svg);
-            imgElement.style.opacity = '1';
-            imgElement.classList.add('avatar-fallback');
-            resolve(false);
-        };
-        
-        // Добавляем индикатор загрузки
-        imgElement.style.opacity = '0';
-        if (imgElement.parentElement) {
-            imgElement.parentElement.classList.add('loading');
-        }
-        
-        setTimeout(() => img.src = src, 100);
-        
-        // Убираем индикатор через 2 секунды
-        setTimeout(() => {
-            if (imgElement.parentElement) {
-                imgElement.parentElement.classList.remove('loading');
-            }
-            imgElement.style.opacity = '1';
-        }, 2000);
-    });
-}
-
-// Генерация цвета на основе ника
-function generateColorFromNickname(nickname) {
-    const colors = [
-        '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7',
-        '#DDA0DD', '#98D8C8', '#F7DC6F', '#BB8FCE', '#85C1E9',
-        '#F8C471', '#82E0AA', '#F1948A', '#85C1E9', '#D7BDE2'
-    ];
-    
-    let hash = 0;
-    for (let i = 0; i < nickname.length; i++) {
-        hash = nickname.charCodeAt(i) + ((hash << 5) - hash);
-    }
-    
-    return colors[Math.abs(hash) % colors.length];
-}
 
 // Инициализация навигации
 function initNavigation() {
@@ -313,7 +170,8 @@ function initNavigation() {
     
     navTabs.forEach(tab => {
         if (tab.dataset.section) {
-            tab.addEventListener('click', () => {
+            tab.addEventListener('click', (e) => {
+                e.preventDefault();
                 switchSection(tab.dataset.section);
             });
         }
@@ -332,8 +190,6 @@ function initNavigation() {
     const faqBtn = document.getElementById('faq-btn');
     const settingsBtn = document.getElementById('settings-btn');
     const menuSettings = document.getElementById('menu-settings');
-    const animatedBgBtn = document.getElementById('animated-bg-btn');
-    const menuAnimatedBg = document.getElementById('menu-animated-bg');
     
     if (faqBtn) {
         faqBtn.addEventListener('click', () => {
@@ -354,26 +210,7 @@ function initNavigation() {
         });
     }
     
-    if (animatedBgBtn) {
-        animatedBgBtn.addEventListener('click', () => {
-            openModal('animated-bg-modal');
-        });
-    }
-    
-    if (menuAnimatedBg) {
-        menuAnimatedBg.addEventListener('click', () => {
-            openModal('animated-bg-modal');
-            if (sideMenu) sideMenu.classList.remove('active');
-        });
-    }
-    
     console.log('Навигация инициализирована');
-}
-
-// Инициализация всех аватаров
-function initAllAvatars() {
-    console.log('Инициализация аватаров...');
-    loadMembers();
 }
 
 // Инициализация участников
@@ -464,15 +301,10 @@ function createMemberCard(member) {
     if (member.pinned) badges += '📍 ';
     if (member.verified) badges += '✓ ';
     
-    // Создаем ID для аватара
-    const avatarId = `avatar-${member.id}`;
-    
     card.innerHTML = `
-        <div class="member-avatar" data-initial="${member.nickname.charAt(0).toUpperCase()}">
-            <img id="${avatarId}" 
-                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9IiMzMzMzMzMiPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iNTAiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGR5PSIwLjM1ZW0iIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI0MCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNmZmYiPk48L3RleHQ+PC9zdmc+" 
-                 alt="${member.nickname}"
-                 loading="lazy">
+        <div class="member-avatar">
+            <img src="${member.avatar}" alt="${member.nickname}"
+                 onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"60\" height=\"60\" viewBox=\"0 0 60 60\"><rect width=\"60\" height=\"60\" fill=\"%23333\" rx=\"30\"/><text x=\"30\" y=\"30\" text-anchor=\"middle\" dy=\"0.35em\" font-family=\"Arial\" font-size=\"24\" fill=\"%23fff\">${member.nickname.charAt(0).toUpperCase()}</text></svg>'">
         </div>
         
         <div class="member-info">
@@ -485,14 +317,6 @@ function createMemberCard(member) {
         </div>
     `;
     
-    // Загружаем аватар после создания элемента
-    setTimeout(() => {
-        const img = card.querySelector(`#${avatarId}`);
-        if (img) {
-            loadAvatarWithFallback(img, `img/avatar${member.id}.png`, member.nickname);
-        }
-    }, 10);
-    
     return card;
 }
 
@@ -503,15 +327,9 @@ function filterMembers(category) {
     
     cards.forEach(card => {
         if (category === 'all' || card.dataset.category === category) {
-            card.style.display = 'block';
-            setTimeout(() => {
-                card.style.opacity = '1';
-            }, 10);
+            card.style.display = 'flex';
         } else {
-            card.style.opacity = '0';
-            setTimeout(() => {
-                card.style.display = 'none';
-            }, 300);
+            card.style.display = 'none';
         }
     });
 }
@@ -529,30 +347,14 @@ function searchMembers(term) {
         const matchesFilter = activeFilter === 'all' || card.dataset.category === activeFilter;
         
         if (matchesSearch && matchesFilter) {
-            card.style.display = 'block';
-            setTimeout(() => {
-                card.style.opacity = '1';
-            }, 10);
+            card.style.display = 'flex';
         } else {
-            card.style.opacity = '0';
-            setTimeout(() => {
-                card.style.display = 'none';
-            }, 300);
+            card.style.display = 'none';
         }
     });
 }
 
-// Дополнительные функции для отображения кнопок
-function createSocialButton(icon, text, url, className = '') {
-    if (!url) return '';
-    return `
-        <a href="${url}" class="action-btn ${className}" target="_blank">
-            <i class="${icon}"></i> ${text}
-        </a>
-    `;
-}
-
-// ПОЛНЫЙ ПРОФИЛЬ УЧАСТНИКА
+// Показать профиль участника
 function showProfile(memberId) {
     const member = members.find(m => m.id == memberId);
     if (!member) {
@@ -581,82 +383,42 @@ function showProfile(memberId) {
     badgesHtml += `<span class="badge category">${member.category}</span>`;
     
     // Основные кнопки
-    let mainButtons = createSocialButton('fab fa-telegram', 'Написать в ЛС', `https://t.me/${member.telegram}`, 'telegram');
-    if (member.project) mainButtons += createSocialButton('fas fa-external-link-alt', 'Основной канал', member.project, 'telegram');
-    if (member.chat) mainButtons += createSocialButton('fas fa-comments', 'Чат', member.chat, 'telegram');
-    if (member.market) mainButtons += createSocialButton('fas fa-shopping-cart', 'Маркет', member.market);
-    if (member.fameList) mainButtons += createSocialButton('fas fa-list', 'Фейм лист', member.fameList);
-    if (member.github) mainButtons += createSocialButton('fab fa-github', 'GitHub', member.github);
+    let mainButtons = '';
+    if (member.telegram) {
+        mainButtons += `<a href="https://t.me/${member.telegram}" class="action-btn telegram" target="_blank">
+            <i class="fab fa-telegram"></i> Написать в ЛС
+        </a>`;
+    }
+    
+    if (member.project) {
+        mainButtons += `<a href="${member.project}" class="action-btn telegram" target="_blank">
+            <i class="fas fa-external-link-alt"></i> Основной канал
+        </a>`;
+    }
     
     // Дополнительные кнопки
     let extraButtons = '';
+    if (member.price) extraButtons += `<a href="${member.price}" class="action-btn" target="_blank">
+        <i class="fas fa-tag"></i> Прайс
+    </a>`;
     
-    // Все возможные ссылки с иконками (система готова для добавления новых ссылок)
-    const allPossibleLinks = {
-        'price': {icon: 'fas fa-tag', text: 'Прайс'},
-        'priceList': {icon: 'fas fa-tags', text: 'Прайс-лист'},
-        'market': {icon: 'fas fa-shopping-cart', text: 'Маркет'},
-        'tiktok': {icon: 'fab fa-tiktok', text: 'TikTok'},
-        'youtube': {icon: 'fab fa-youtube', text: 'YouTube'},
-        'yt': {icon: 'fab fa-youtube', text: 'YouTube'},
-        'discord': {icon: 'fab fa-discord', text: 'Discord'},
-        'vk': {icon: 'fab fa-vk', text: 'VK'},
-        'gift': {icon: 'fas fa-gift', text: 'Подарок'},
-        'website': {icon: 'fas fa-globe', text: 'Сайт'},
-        'reputation': {icon: 'fas fa-star', text: 'Репутация'},
-        'work': {icon: 'fas fa-briefcase', text: 'Ворк'},
-        'forum': {icon: 'fas fa-users', text: 'Форум'},
-        'def': {icon: 'fas fa-shield-alt', text: 'Деф'},
-        'whitelist': {icon: 'fas fa-list', text: 'White List'},
-        'blog': {icon: 'fas fa-blog', text: 'Блог'},
-        'private': {icon: 'fas fa-lock', text: 'Приват'}
-    };
+    if (member.chat) extraButtons += `<a href="${member.chat}" class="action-btn telegram" target="_blank">
+        <i class="fas fa-comments"></i> Чат
+    </a>`;
     
-    // Проверяем каждую возможную ссылку в объекте участника
-    Object.keys(allPossibleLinks).forEach(key => {
-        if (member[key]) {
-            extraButtons += createSocialButton(allPossibleLinks[key].icon, allPossibleLinks[key].text, member[key]);
-        }
-    });
+    if (member.market) extraButtons += `<a href="${member.market}" class="action-btn" target="_blank">
+        <i class="fas fa-shopping-cart"></i> Маркет
+    </a>`;
     
-    // Статистика
-    const stats = {
-        'Статус': member.role,
-        'Верификация': member.verified ? '✓ Подтверждён' : '✗ Не подтверждён',
-        'Закреп': member.pinned ? '📌 Включён' : '✗ Выключен',
-        'Дата регистрации': formattedDate,
-        'Активность': member.activity,
-        'Подписчики': member.followers,
-        'ID': member.id
-    };
-    
-    // Добавляем цены если есть
-    if (member.priceEntry) stats['Цена входа'] = member.priceEntry;
-    if (member.priceVerified) stats['Цена галочки'] = member.priceVerified;
-    if (member.pricePinned) stats['Цена закрепа'] = member.pricePinned;
-    
-    let statsHtml = '';
-    Object.entries(stats).forEach(([label, value]) => {
-        if (value) {
-            statsHtml += `
-                <div class="stat-item">
-                    <span class="stat-label">${label}:</span>
-                    <span class="stat-value">${value}</span>
-                </div>
-            `;
-        }
-    });
-    
-    // ID для аватара профиля
-    const profileAvatarId = `profile-avatar-${member.id}`;
+    if (member.github) extraButtons += `<a href="${member.github}" class="action-btn" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+    </a>`;
     
     container.innerHTML = `
         <div class="profile-header">
-            <div class="profile-avatar" data-initial="${member.nickname.charAt(0).toUpperCase()}">
-                <img id="${profileAvatarId}" 
-                     src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9IiMzMzMzMzMiPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iNTAiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGR5PSIwLjM1ZW0iIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI0MCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNmZmYiPk48L3RleHQ+PC9zdmc+" 
-                     alt="${member.nickname}"
-                     loading="eager">
+            <div class="profile-avatar">
+                <img src="${member.avatar}" alt="${member.nickname}"
+                     onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"120\" viewBox=\"0 0 120 120\"><rect width=\"120\" height=\"120\" fill=\"%23333\" rx=\"60\"/><text x=\"60\" y=\"60\" text-anchor=\"middle\" dy=\"0.35em\" font-family=\"Arial\" font-size=\"48\" fill=\"%23fff\">${member.nickname.charAt(0).toUpperCase()}</text></svg>'">
             </div>
             
             <h1 class="profile-title">${member.nickname}</h1>
@@ -699,69 +461,59 @@ function showProfile(memberId) {
             
             <div class="profile-stats">
                 <h3>Статистика</h3>
-                ${statsHtml}
+                <div class="stat-item">
+                    <span class="stat-label">Статус:</span>
+                    <span class="stat-value">${member.role}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Верификация:</span>
+                    <span class="stat-value">${member.verified ? '✓ Подтверждён' : '✗ Не подтверждён'}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Закреп:</span>
+                    <span class="stat-value">${member.pinned ? '📌 Включён' : '✗ Выключен'}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Дата регистрации:</span>
+                    <span class="stat-value">${formattedDate}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Активность:</span>
+                    <span class="stat-value">${member.activity}</span>
+                </div>
+                ${member.followers ? `
+                <div class="stat-item">
+                    <span class="stat-label">Подписчики:</span>
+                    <span class="stat-value">${member.followers}</span>
+                </div>
+                ` : ''}
+                <div class="stat-item">
+                    <span class="stat-label">ID:</span>
+                    <span class="stat-value">${member.id}</span>
+                </div>
+                ${member.priceEntry ? `
+                <div class="stat-item">
+                    <span class="stat-label">Цена входа:</span>
+                    <span class="stat-value">${member.priceEntry}</span>
+                </div>
+                ` : ''}
+                ${member.priceVerified ? `
+                <div class="stat-item">
+                    <span class="stat-label">Цена галочки:</span>
+                    <span class="stat-value">${member.priceVerified}</span>
+                </div>
+                ` : ''}
+                ${member.pricePinned ? `
+                <div class="stat-item">
+                    <span class="stat-label">Цена закрепа:</span>
+                    <span class="stat-value">${member.pricePinned}</span>
+                </div>
+                ` : ''}
             </div>
         </div>
     `;
     
-    // Загружаем аватар профиля
-    setTimeout(() => {
-        const img = document.getElementById(profileAvatarId);
-        if (img) {
-            loadAvatarWithFallback(img, `img/avatar${member.id}.png`, member.nickname);
-        }
-    }, 10);
-    
     switchSection('profile-details');
-}
-
-// Инициализация снега
-function initSnow() {
-    const snowContainer = document.querySelector('.snow-container');
-    if (!snowContainer) return;
-    
-    createSnowflakes();
-    
-    const snowToggle = document.getElementById('snow-effect');
-    if (snowToggle) {
-        snowToggle.addEventListener('change', function() {
-            if (this.checked) {
-                snowContainer.style.display = 'block';
-                createSnowflakes();
-            } else {
-                snowContainer.style.display = 'none';
-                snowContainer.innerHTML = '';
-            }
-        });
-    }
-}
-
-// Создание снежинок
-function createSnowflakes() {
-    const snowContainer = document.querySelector('.snow-container');
-    if (!snowContainer) return;
-    
-    snowContainer.innerHTML = '';
-    
-    for (let i = 0; i < 60; i++) {
-        const snowflake = document.createElement('div');
-        snowflake.className = 'snowflake';
-        
-        const size = Math.random() * 4 + 2;
-        const startX = Math.random() * 100;
-        const duration = Math.random() * 5 + 5;
-        const opacity = Math.random() * 0.5 + 0.3;
-        
-        snowflake.style.width = `${size}px`;
-        snowflake.style.height = `${size}px`;
-        snowflake.style.left = `${startX}vw`;
-        snowflake.style.opacity = opacity;
-        snowflake.style.animationDuration = `${duration}s`;
-        snowflake.style.animationDelay = `${Math.random() * 5}s`;
-        snowflake.style.backgroundColor = `rgba(255, 255, 255, ${opacity})`;
-        
-        snowContainer.appendChild(snowflake);
-    }
 }
 
 // Инициализация настроек
@@ -807,257 +559,19 @@ function initSettings() {
             if (file) {
                 const reader = new FileReader();
                 reader.onload = function(e) {
-                    bgPreview.innerHTML = `<img src="${e.target.result}" alt="Фон">`;
+                    bgPreview.innerHTML = `<img src="${e.target.result}" alt="Фон" style="max-width:100%;border-radius:10px;">`;
                     bgPreview.style.display = 'block';
-                    
-                    localStorage.setItem('fame_background', e.target.result);
-                    document.body.style.backgroundImage = `url(${e.target.result})`;
-                    document.body.style.backgroundSize = 'cover';
-                    document.body.style.backgroundAttachment = 'fixed';
-                    document.body.style.backgroundPosition = 'center';
                 };
                 reader.readAsDataURL(file);
             }
         });
     }
-    
-    const neonFlowEffect = document.getElementById('neon-flow-effect');
-    if (neonFlowEffect) {
-        neonFlowEffect.addEventListener('change', function() {
-            if (this.checked) {
-                initDynamicNeon();
-            } else {
-                removeNeonFlow();
-            }
-        });
-    }
 }
 
-// Инициализация контролов неона
-function initNeonControls() {
-    const neonColor = document.getElementById('neon-color');
-    const neonIntensity = document.getElementById('neon-intensity');
-    const neonSpeed = document.getElementById('neon-speed');
-    const applyNeonBtn = document.getElementById('apply-neon');
-    const intensityValue = document.getElementById('intensity-value');
-    const speedValue = document.getElementById('speed-value');
-    const colorPreview = document.getElementById('neon-color-preview');
-    
-    if (neonColor && colorPreview) {
-        neonColor.addEventListener('input', function() {
-            colorPreview.style.backgroundColor = this.value;
-        });
-        colorPreview.style.backgroundColor = neonColor.value;
-    }
-    
-    if (neonIntensity && intensityValue) {
-        neonIntensity.addEventListener('input', function() {
-            intensityValue.textContent = this.value + '%';
-        });
-        intensityValue.textContent = neonIntensity.value + '%';
-    }
-    
-    if (neonSpeed && speedValue) {
-        const speedLabels = {
-            1: 'Очень медленно',
-            2: 'Медленно',
-            3: 'Немного медленно',
-            4: 'Ниже средней',
-            5: 'Средняя',
-            6: 'Выше средней',
-            7: 'Быстро',
-            8: 'Очень быстро',
-            9: 'Супер быстро',
-            10: 'Максимальная'
-        };
-        
-        neonSpeed.addEventListener('input', function() {
-            speedValue.textContent = speedLabels[this.value] || 'Средняя';
-        });
-        speedValue.textContent = speedLabels[neonSpeed.value] || 'Средняя';
-    }
-    
-    if (applyNeonBtn) {
-        applyNeonBtn.addEventListener('click', function() {
-            const color = neonColor.value;
-            const intensity = parseInt(neonIntensity.value) / 100;
-            const speed = parseInt(neonSpeed.value);
-            
-            applyNeonSettings(color, intensity, speed);
-        });
-    }
-}
-
-// Применение настроек неона
-function applyNeonSettings(color, intensity, speed) {
-    currentNeonColor = color;
-    currentNeonIntensity = intensity;
-    currentNeonSpeed = speed;
-    
-    localStorage.setItem('fame_neon_color', color);
-    localStorage.setItem('fame_neon_intensity', intensity);
-    localStorage.setItem('fame_neon_speed', speed);
-    
-    initDynamicNeon();
-}
-
-// Динамический неон
-function initDynamicNeon() {
-    const oldStyle = document.getElementById('dynamic-neon-style');
-    if (oldStyle) oldStyle.remove();
-    
-    const hex = currentNeonColor;
-    const r = parseInt(hex.slice(1,3), 16);
-    const g = parseInt(hex.slice(3,5), 16);
-    const b = parseInt(hex.slice(5,7), 16);
-    
-    const duration = (11 - currentNeonSpeed) + 's';
-    
-    const style = document.createElement('style');
-    style.id = 'dynamic-neon-style';
-    
-    style.textContent = `
-        @keyframes neonFlow {
-            0%, 100% { 
-                box-shadow: 0 0 ${10 * currentNeonIntensity}px rgba(${r}, ${g}, ${b}, ${0.8 * currentNeonIntensity}),
-                          0 0 ${20 * currentNeonIntensity}px rgba(${r}, ${g}, ${b}, ${0.6 * currentNeonIntensity}),
-                          0 0 ${30 * currentNeonIntensity}px rgba(${r}, ${g}, ${b}, ${0.4 * currentNeonIntensity}),
-                          inset 0 0 ${10 * currentNeonIntensity}px rgba(${r}, ${g}, ${b}, ${0.5 * currentNeonIntensity}); 
-            }
-            50% { 
-                box-shadow: 0 0 ${15 * currentNeonIntensity}px rgba(${r}, ${g}, ${b}, ${0.9 * currentNeonIntensity}),
-                          0 0 ${25 * currentNeonIntensity}px rgba(${r}, ${g}, ${b}, ${0.7 * currentNeonIntensity}),
-                          0 0 ${35 * currentNeonIntensity}px rgba(${r}, ${g}, ${b}, ${0.5 * currentNeonIntensity}),
-                          inset 0 0 ${15 * currentNeonIntensity}px rgba(${r}, ${g}, ${b}, ${0.6 * currentNeonIntensity}); 
-            }
-        }
-        
-        @keyframes textNeonFlow {
-            0%, 100% { 
-                text-shadow: 0 0 ${5 * currentNeonIntensity}px rgba(${r}, ${g}, ${b}, ${0.8 * currentNeonIntensity}),
-                           0 0 ${10 * currentNeonIntensity}px rgba(${r}, ${g}, ${b}, ${0.6 * currentNeonIntensity}); 
-            }
-            50% { 
-                text-shadow: 0 0 ${8 * currentNeonIntensity}px rgba(${r}, ${g}, ${b}, ${0.9 * currentNeonIntensity}),
-                           0 0 ${15 * currentNeonIntensity}px rgba(${r}, ${g}, ${b}, ${0.7 * currentNeonIntensity}); 
-            }
-        }
-        
-        .neon-flow {
-            animation: neonFlow ${duration} ease-in-out infinite !important;
-        }
-        
-        .text-neon-flow {
-            animation: textNeonFlow ${duration} ease-in-out infinite !important;
-        }
-    `;
-    
-    document.head.appendChild(style);
-    
-    const neonFlowEffect = document.getElementById('neon-flow-effect');
-    if (neonFlowEffect && neonFlowEffect.checked) {
-        applyNeonToElements();
-    }
-}
-
-// Применение неона к элементам
-function applyNeonToElements() {
-    document.querySelectorAll('.member-card').forEach(card => {
-        card.classList.add('neon-flow');
-    });
-    
-    document.querySelectorAll('.modal-content').forEach(modal => {
-        modal.classList.add('neon-flow');
-    });
-    
-    document.querySelectorAll('.upload-btn').forEach(btn => {
-        btn.classList.add('neon-flow');
-    });
-    
-    const profileHeader = document.querySelector('.profile-header');
-    if (profileHeader) {
-        profileHeader.classList.add('neon-flow');
-    }
-}
-
-// Удаление эффекта переливания
-function removeNeonFlow() {
-    document.querySelectorAll('.neon-flow').forEach(el => {
-        el.classList.remove('neon-flow');
-    });
-    document.querySelectorAll('.text-neon-flow').forEach(el => {
-        el.classList.remove('text-neon-flow');
-    });
-}
-
-// Инициализация анимированного фона
-function initAnimatedBg() {
-    const bgSpeed = document.getElementById('bg-speed');
-    const bgOpacity = document.getElementById('bg-opacity');
-    const applyBgBtn = document.getElementById('apply-animated-bg');
-    
-    if (bgSpeed) {
-        bgSpeed.addEventListener('input', function() {
-            currentBgSpeed = parseInt(this.value);
-        });
-    }
-    
-    if (bgOpacity) {
-        bgOpacity.addEventListener('input', function() {
-            currentBgOpacity = parseInt(this.value) / 100;
-        });
-    }
-    
-    if (applyBgBtn) {
-        applyBgBtn.addEventListener('click', applyAnimatedBg);
-    }
-}
-
-// Применение анимированного фона
-function applyAnimatedBg() {
-    const bgElement = document.getElementById('animated-bg');
-    if (!bgElement) return;
-    
-    // Удаляем все классы фонов
-    allBackgrounds.forEach(bg => {
-        bgElement.classList.remove(`${bg}-bg`);
-    });
-    
-    // Добавляем выбранный фон
-    bgElement.classList.add(`${currentAnimatedBg}-bg`);
-    
-    // Настраиваем скорость анимации
-    const speed = currentBgSpeed / 10;
-    bgElement.style.animationDuration = `${20 / speed}s`;
-    
-    // Настраиваем прозрачность
-    bgElement.style.opacity = currentBgOpacity;
-    
-    // Сохраняем настройки
-    localStorage.setItem('fame_animated_bg', currentAnimatedBg);
-    localStorage.setItem('fame_bg_speed', currentBgSpeed);
-    localStorage.setItem('fame_bg_opacity', currentBgOpacity);
-    
-    console.log('Фон применен:', currentAnimatedBg);
-}
-
-// Инициализация модальных окон
-function initModals() {
-    console.log('Инициализация модальных окон...');
-    
-    document.querySelectorAll('.close-modal').forEach(btn => {
-        btn.addEventListener('click', function() {
-            closeModal(this.closest('.modal'));
-        });
-    });
-    
-    window.addEventListener('click', function(event) {
-        if (event.target.classList.contains('modal')) {
-            closeModal(event.target);
-        }
-    });
-    
-    console.log('Модальные окна инициализированы');
+// Применение темы
+function applyTheme(theme) {
+    console.log('Применение темы:', theme);
+    // Здесь можно добавить логику изменения темы
 }
 
 // Открытие модального окна
@@ -1081,98 +595,23 @@ function closeModal(modal) {
     }
 }
 
-// Загрузка сохраненных настроек
-function loadSavedSettings() {
-    console.log('Загрузка сохраненных настроек...');
+// Инициализация модальных окон
+function initModals() {
+    console.log('Инициализация модальных окон...');
     
-    // Тема
-    const savedTheme = localStorage.getItem('fame_theme');
-    if (savedTheme) {
-        const themeOption = document.querySelector(`.theme-option[data-theme="${savedTheme}"]`);
-        if (themeOption) {
-            themeOption.click();
+    document.querySelectorAll('.close-modal').forEach(btn => {
+        btn.addEventListener('click', function() {
+            closeModal(this.closest('.modal'));
+        });
+    });
+    
+    window.addEventListener('click', function(event) {
+        if (event.target.classList.contains('modal')) {
+            closeModal(event.target);
         }
-    }
+    });
     
-    // Фон
-    const savedBg = localStorage.getItem('fame_background');
-    if (savedBg) {
-        document.body.style.backgroundImage = `url(${savedBg})`;
-        document.body.style.backgroundSize = 'cover';
-        document.body.style.backgroundAttachment = 'fixed';
-        document.body.style.backgroundPosition = 'center';
-    }
-    
-    // Настройки неона
-    const savedNeonColor = localStorage.getItem('fame_neon_color') || '#808080';
-    const savedNeonIntensity = parseFloat(localStorage.getItem('fame_neon_intensity')) || 0.5;
-    const savedNeonSpeed = parseInt(localStorage.getItem('fame_neon_speed')) || 5;
-    
-    const neonColor = document.getElementById('neon-color');
-    const neonIntensity = document.getElementById('neon-intensity');
-    const neonSpeed = document.getElementById('neon-speed');
-    
-    if (neonColor) neonColor.value = savedNeonColor;
-    if (neonIntensity) neonIntensity.value = savedNeonIntensity * 100;
-    if (neonSpeed) neonSpeed.value = savedNeonSpeed;
-    
-    applyNeonSettings(savedNeonColor, savedNeonIntensity, savedNeonSpeed);
-    
-    // Анимированный фон
-    const savedAnimatedBg = localStorage.getItem('fame_animated_bg') || 'hooks';
-    const savedBgSpeed = parseInt(localStorage.getItem('fame_bg_speed')) || 10;
-    const savedBgOpacity = parseFloat(localStorage.getItem('fame_bg_opacity')) || 0.5;
-    
-    currentAnimatedBg = savedAnimatedBg;
-    currentBgSpeed = savedBgSpeed;
-    currentBgOpacity = savedBgOpacity;
-    
-    const bgSpeed = document.getElementById('bg-speed');
-    const bgOpacity = document.getElementById('bg-opacity');
-    
-    if (bgSpeed) bgSpeed.value = savedBgSpeed;
-    if (bgOpacity) bgOpacity.value = savedBgOpacity * 100;
-    
-    applyAnimatedBg();
-    
-    // Эффект переливания
-    const savedNeonFlow = localStorage.getItem('fame_neon_flow');
-    const neonFlowCheckbox = document.getElementById('neon-flow-effect');
-    if (neonFlowCheckbox) {
-        if (savedNeonFlow === 'disabled') {
-            neonFlowCheckbox.checked = false;
-            removeNeonFlow();
-        } else {
-            neonFlowCheckbox.checked = true;
-        }
-    }
-    
-    // Снег
-    const savedSnow = localStorage.getItem('fame_snow');
-    const snowCheckbox = document.getElementById('snow-effect');
-    if (snowCheckbox) {
-        if (savedSnow === 'disabled') {
-            snowCheckbox.checked = false;
-            const snowContainer = document.querySelector('.snow-container');
-            if (snowContainer) snowContainer.style.display = 'none';
-        } else {
-            snowCheckbox.checked = true;
-        }
-    }
-}
-
-// Применение темы
-function applyTheme(theme) {
-    currentTheme = theme;
-    
-    const themeClasses = ['dark-theme', 'black-theme', 'red-theme', 'red-black-theme', 
-                         'red-gray-theme', 'purple-theme', 'blue-theme', 'green-theme', 
-                         'orange-theme', 'pink-theme'];
-    
-    document.body.classList.remove(...themeClasses);
-    document.body.classList.add(theme + '-theme');
-    
-    localStorage.setItem('fame_theme', theme);
+    console.log('Модальные окна инициализированы');
 }
 
 // Глобальные функции
@@ -1182,20 +621,6 @@ window.copyProfileLink = function(username) {
         alert('Ссылка на профиль скопирована в буфер обмена!');
     });
 };
-
-// Сохранение настроек при изменении
-document.getElementById('snow-effect')?.addEventListener('change', function() {
-    localStorage.setItem('fame_snow', this.checked ? 'enabled' : 'disabled');
-});
-
-document.getElementById('neon-flow-effect')?.addEventListener('change', function() {
-    localStorage.setItem('fame_neon_flow', this.checked ? 'enabled' : 'disabled');
-    if (this.checked) {
-        initDynamicNeon();
-    } else {
-        removeNeonFlow();
-    }
-});
 
 // Функция переключения секций
 function switchSection(sectionId) {
@@ -1217,3 +642,27 @@ function switchSection(sectionId) {
         }
     });
 }
+
+// Инициализация при загрузке
+document.addEventListener('DOMContentLoaded', () => {
+    initNavigation();
+    initMembers();
+    initSettings();
+    initModals();
+    
+    // Закрытие модальных окон
+    document.querySelectorAll('.close-modal').forEach(btn => {
+        btn.addEventListener('click', function() {
+            this.closest('.modal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+    });
+    
+    // Клик вне модального окна для закрытия
+    window.addEventListener('click', (e) => {
+        if (e.target.classList.contains('modal')) {
+            e.target.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+});
