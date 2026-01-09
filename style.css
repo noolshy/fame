@@ -1555,6 +1555,60 @@ input:checked + .slider:before {
         font-size: 1.2rem;
     }
 }
+/* ==================== КНОПКА ЗАЯВКИ ==================== */
+.application-container {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.apply-btn {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    background: rgba(102, 102, 255, 0.1);
+    border: 2px solid rgba(102, 102, 255, 0.3);
+    color: #66f;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.apply-btn:hover {
+    background: rgba(102, 102, 255, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(102, 102, 255, 0.3);
+}
+
+.apply-info {
+    color: #888;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+/* Кнопка в модалке */
+.telegram-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 30px;
+    background: rgba(0, 136, 204, 0.1);
+    color: #0088cc;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    border: 2px solid rgba(0, 136, 204, 0.3);
+    transition: all 0.3s;
+}
+
+.telegram-btn:hover {
+    background: rgba(0, 136, 204, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 136, 204, 0.3);
+}
 
 @media (max-width: 480px) {
     .logo {
