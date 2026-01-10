@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="public, max-age=86400">
-    <meta name="theme-color" content="#121212">
+    <meta name="theme-color" content="#000000">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="black-theme">
     <!-- Анимированный фон -->
     <div id="animated-bg" class="animated-bg hooks-bg"></div>
     
@@ -38,11 +38,10 @@
             </button>
         </div>
         <div class="nav-right">
-            <!-- Кнопка заявки -->
-            <a href="https://t.me/NoolShyfame_bot" target="_blank" class="nav-icon apply-nav-btn" title="Подать заявку">
-                <i class="fas fa-paper-plane"></i>
+            <!-- Кнопка Отправить заявку -->
+            <a href="https://t.me/NoolShyfame_bot" class="apply-btn" target="_blank" title="Отправить заявку">
+                <i class="fas fa-paper-plane"></i> Отправить заявку
             </a>
-            
             <button class="nav-icon" id="faq-btn" title="FAQ">
                 <i class="fas fa-question-circle"></i>
             </button>
@@ -55,7 +54,7 @@
     <!-- Боковое меню -->
     <div class="side-menu" id="side-menu">
         <div class="menu-header">
-            <h3>Мену</h3>
+            <h3>Меню</h3>
             <button class="close-menu" id="close-menu">&times;</button>
         </div>
         <div class="menu-items">
@@ -64,6 +63,10 @@
             </a>
             <a href="#faq" class="menu-item">
                 <i class="fas fa-question-circle"></i> FAQ
+            </a>
+            <!-- Добавляем кнопку заявки и в боковое меню -->
+            <a href="https://t.me/NoolShyfame_bot" class="menu-item" target="_blank">
+                <i class="fas fa-paper-plane"></i> Отправить заявку
             </a>
             <button class="menu-item" id="menu-settings">
                 <i class="fas fa-sliders-h"></i> Настройки
@@ -120,6 +123,12 @@
                     <p>Галочка (верификация): <strong>30 зв</strong></p>
                     <p>Закреп профиля: <strong>50 зв</strong></p>
                     <p><em>Оплата только через Telegram</em></p>
+                    <div class="apply-section">
+                        <h3>Хочешь попасть в фейм-лист?</h3>
+                        <a href="https://t.me/NoolShyfame_bot" class="apply-btn-large" target="_blank">
+                            <i class="fas fa-paper-plane"></i> Отправить заявку
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -144,11 +153,11 @@
                 <div class="tab-content active" id="theme-tab">
                     <h3>Тема оформления</h3>
                     <div class="theme-grid">
-                        <div class="theme-option active" data-theme="dark">
+                        <div class="theme-option" data-theme="dark">
                             <div class="theme-preview dark-theme"></div>
                             <span>Темная</span>
                         </div>
-                        <div class="theme-option" data-theme="black">
+                        <div class="theme-option active" data-theme="black">
                             <div class="theme-preview black-theme"></div>
                             <span>Черная</span>
                         </div>
