@@ -13,7 +13,7 @@ body {
     transition: background 0.3s ease;
 }
 
-/* Анимированный фон */
+
 .animated-bg {
     position: fixed;
     top: 0;
@@ -26,7 +26,6 @@ body {
     transition: opacity 0.5s ease;
 }
 
-/* ==================== ОСНОВНЫЕ АНИМИРОВАННЫЕ ФОНЫ ==================== */
 .particles-bg {
     background: 
         radial-gradient(circle at 25% 25%, currentColor 2px, transparent 3px),
@@ -269,7 +268,6 @@ body {
     color: #00ffff;
 }
 
-/* ==================== АНИМАЦИИ ==================== */
 @keyframes particlesMove {
     0% { transform: translate(0, 0); }
     100% { transform: translate(50px, 50px); }
@@ -415,7 +413,7 @@ body {
     100% { transform: scale(3); opacity: 0; }
 }
 
-/* Снег */
+
 .snow-container {
     position: fixed;
     top: 0;
@@ -438,7 +436,7 @@ body {
     to { transform: translateY(100vh); }
 }
 
-/* Навигация */
+
 .top-nav {
     display: flex;
     justify-content: space-between;
@@ -527,8 +525,7 @@ body {
     color: #0088cc;
     border-color: rgba(0, 136, 204, 0.3);
 }
-
-/* Кнопка "Отправить заявку" */
+/
 .apply-btn {
     padding: 10px 20px;
     background: linear-gradient(135deg, #ff3366, #ff6699);
@@ -588,7 +585,6 @@ body {
     box-shadow: 0 10px 25px rgba(255, 51, 102, 0.5);
 }
 
-/* Боковое меню */
 .side-menu {
     position: fixed;
     top: 0;
@@ -663,7 +659,7 @@ body {
     transform: translateX(5px);
 }
 
-/* Секции */
+
 .section {
     display: none;
     padding: 30px;
@@ -685,7 +681,7 @@ body {
     margin: 0 auto;
 }
 
-/* Поиск и фильтры */
+
 .search-container {
     background: rgba(25, 25, 25, 0.9);
     border-radius: 15px;
@@ -749,7 +745,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Сетка участников */
+
 .members-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -810,7 +806,7 @@ body {
     border: 1px solid #0f0;
 }
 
-/* Исправления для аватаров */
+
 .member-avatar {
     width: 70px;
     height: 70px;
@@ -845,7 +841,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Защита от битых изображений */
+
 .member-avatar::after,
 .profile-avatar::after {
     content: attr(data-initial);
@@ -873,12 +869,12 @@ body {
     opacity: 1;
 }
 
-/* Аватарки-заглушки */
+
 img.avatar-fallback {
     background: linear-gradient(135deg, #2a2a2a, #3a3a3a) !important;
 }
 
-/* Анимация загрузки для аватаров */
+
 @keyframes avatarPulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -921,7 +917,7 @@ img.avatar-fallback {
     color: #666;
 }
 
-/* Детали профиля */
+
 .profile-header {
     background: rgba(25, 25, 25, 0.95);
     border-radius: 20px;
@@ -1097,7 +1093,7 @@ img.avatar-fallback {
     font-weight: bold;
 }
 
-/* Модальные окна */
+
 .modal {
     display: none;
     position: fixed;
@@ -1157,7 +1153,7 @@ img.avatar-fallback {
     transform: rotate(90deg);
 }
 
-/* Вкладки настроек */
+
 .settings-tabs {
     display: flex;
     padding: 0 30px;
@@ -1194,7 +1190,7 @@ img.avatar-fallback {
     display: block;
 }
 
-/* Настройки неона */
+
 .neon-controls {
     display: flex;
     flex-direction: column;
@@ -1280,7 +1276,7 @@ input[type="range"]::-moz-range-thumb {
     transform: translateY(-3px);
 }
 
-/* Анимированные фоны */
+
 .animated-bg-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -1324,7 +1320,6 @@ input[type="range"]::-moz-range-thumb {
     border-top: 1px solid #333;
 }
 
-/* Темы оформления */
 .theme-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -1358,7 +1353,6 @@ input[type="range"]::-moz-range-thumb {
     border: 1px solid #333;
 }
 
-/* Цвета тем */
 .dark-theme { background: linear-gradient(135deg, #1a1a1a, #2a2a2a); }
 .black-theme { background: linear-gradient(135deg, #000, #111); }
 .red-theme { background: linear-gradient(135deg, #330000, #440000); }
@@ -1370,7 +1364,7 @@ input[type="range"]::-moz-range-thumb {
 .orange-theme { background: linear-gradient(135deg, #331a00, #442200); }
 .pink-theme { background: linear-gradient(135deg, #330033, #440044); }
 
-/* Загрузка фона */
+
 .background-upload {
     margin-top: 20px;
 }
@@ -1411,7 +1405,7 @@ input[type="range"]::-moz-range-thumb {
     object-fit: cover;
 }
 
-/* Эффекты */
+
 .effect-option {
     display: flex;
     justify-content: space-between;
@@ -1436,7 +1430,7 @@ input[type="range"]::-moz-range-thumb {
     font-size: 0.9rem;
 }
 
-/* Переключатель */
+
 .switch {
     position: relative;
     display: inline-block;
@@ -1484,7 +1478,7 @@ input:checked + .slider:before {
     background-color: #fff;
 }
 
-/* FAQ */
+
 .faq-content {
     background: rgba(25, 25, 25, 0.95);
     border-radius: 20px;
@@ -1546,7 +1540,7 @@ input:checked + .slider:before {
     color: #0f0;
 }
 
-/* Секция заявки в FAQ */
+
 .apply-section {
     margin-top: 30px;
     padding: 25px;
@@ -1562,7 +1556,7 @@ input:checked + .slider:before {
     font-size: 1.3rem;
 }
 
-/* Улучшенные размеры для мобильных устройств */
+
 @media (max-width: 1100px) {
     .profile-content {
         grid-template-columns: 1fr;
@@ -1664,7 +1658,7 @@ input:checked + .slider:before {
     }
     
     .apply-btn {
-        display: none; /* Скрываем на очень маленьких экранах */
+        display: none; 
     }
     
     .apply-btn-large {
