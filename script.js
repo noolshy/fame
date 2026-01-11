@@ -94,6 +94,46 @@ const members = [
             project: "https://t.me/+WY-yRFYVxhJjNTFi",
         }
     },
+     {
+            id: 5,
+        nickname: "Александр Макаров",
+        username: "@vkfir",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "Время работы с 14:00 до 08.30",
+        avatar: "img/avatar5.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+bKWcSMyF-bs3M2Ni",
+        joinDate: "2026-01-12",
+        activity: "Постоянная",
+         details: "Александр Макаров личность в NoolShy Fame.",
+        skills: ["Александр Макаров — это человек который имеет не большую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+            telegram: "@vkfir",
+            project: "https://t.me/+bKWcSMyF-bs3M2Ni",
+        }
+    },
+         {
+            id: 6,
+        nickname: "shatapov",
+        username: "@shatapovv",
+        category: "Высокий фейм",
+        role: "Высокий фейм",
+        description: "🏴‍☠️| project- @Cultizm93 | price- @price_deff| threats-emergencies| отзывы- @otzivi_shatapova| вмэл",
+        avatar: "img/avatar6.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+G7cebeEpqFQyZWZi",
+        joinDate: "2026-01-12",
+        activity: "Постоянная",
+         details: "shatapov личность в NoolShy Fame.",
+        skills: ["shatapov — это человек который имеет большую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+            telegram: "@shatapovv",
+            project: "https://t.me/+G7cebeEpqFQyZWZi",
+        }
+    },
 ];
 
 
