@@ -1,4 +1,4 @@
-// ДАННЫЕ УЧАСТНИКОВ - 1 УЧАСТНИК
+
 const members = [
     {
         id: 1,
@@ -17,8 +17,7 @@ const members = [
         market: "https://noolshy.github.io/market/",
         fameList: "https://noolshy.github.io/fame/",
         github: "https://github.com/noolshy",
-        // Для добавления других ссылок - просто добавьте их как свойства объекта
-        
+
         joinDate: "2026-01-08",
         activity: "Постоянная",
         posts: 150,
@@ -98,7 +97,6 @@ const members = [
 ];
 
 
-// Массив всех фонов
 const allBackgrounds = [
     'particles', 'waves', 'pulse', 'hooks', 'circuit',
     'grid', 'dots', 'lines', 'hexagon', 'triangles',
@@ -108,7 +106,7 @@ const allBackgrounds = [
     'spiral', 'radar', 'sonar'
 ];
 
-// Текущие настройки - ЧЕРНАЯ ТЕМА ПО УМОЛЧАНИЮ
+
 let currentTheme = 'black';
 let currentNeonColor = '#808080';
 let currentNeonIntensity = 0.5;
@@ -117,7 +115,7 @@ let currentAnimatedBg = 'hooks';
 let currentBgSpeed = 10;
 let currentBgOpacity = 0.5;
 
-// Инициализация
+
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM загружен, инициализация...');
     initNavigation();
@@ -134,7 +132,6 @@ document.addEventListener('DOMContentLoaded', function() {
     generateBgGrid();
 });
 
-// Генерация сетки фонов
 function generateBgGrid() {
     const grid = document.querySelector('.animated-bg-grid');
     if (!grid) {
@@ -168,7 +165,7 @@ function generateBgGrid() {
     console.log('Сетка фонов сгенерирована');
 }
 
-// Получение читаемого имени фона
+
 function getBgName(bg) {
     const names = {
         'particles': 'Частицы', 'waves': 'Волны', 'pulse': 'Пульсация',
@@ -186,7 +183,7 @@ function getBgName(bg) {
     return names[bg] || bg;
 }
 
-// Функция для безопасной загрузки изображения
+
 function loadAvatarWithFallback(imgElement, src, nickname) {
     return new Promise((resolve) => {
         const img = new Image();
@@ -198,7 +195,7 @@ function loadAvatarWithFallback(imgElement, src, nickname) {
         };
         
         img.onerror = () => {
-            // Создаем SVG аватар с первой буквой ника
+      
             const initial = nickname.charAt(0).toUpperCase();
             const color = generateColorFromNickname(nickname);
             
@@ -217,7 +214,7 @@ function loadAvatarWithFallback(imgElement, src, nickname) {
             resolve(false);
         };
         
-        // Добавляем индикатор загрузки
+   
         imgElement.style.opacity = '0';
         if (imgElement.parentElement) {
             imgElement.parentElement.classList.add('loading');
@@ -225,7 +222,6 @@ function loadAvatarWithFallback(imgElement, src, nickname) {
         
         setTimeout(() => img.src = src, 100);
         
-        // Убираем индикатор через 2 секунды
         setTimeout(() => {
             if (imgElement.parentElement) {
                 imgElement.parentElement.classList.remove('loading');
@@ -235,7 +231,7 @@ function loadAvatarWithFallback(imgElement, src, nickname) {
     });
 }
 
-// Генерация цвета на основе ника
+
 function generateColorFromNickname(nickname) {
     const colors = [
         '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7',
@@ -251,7 +247,6 @@ function generateColorFromNickname(nickname) {
     return colors[Math.abs(hash) % colors.length];
 }
 
-// Инициализация навигации
 function initNavigation() {
     console.log('Инициализация навигации...');
     
@@ -275,7 +270,7 @@ function initNavigation() {
         });
     }
     
-    // Переключение секций
+   
     const navTabs = document.querySelectorAll('.nav-tab');
     const menuItems = document.querySelectorAll('.menu-item');
     const sections = document.querySelectorAll('.section');
@@ -327,7 +322,7 @@ function initNavigation() {
         }
     });
     
-    // Специальные кнопки
+   
     const faqBtn = document.getElementById('faq-btn');
     const settingsBtn = document.getElementById('settings-btn');
     const menuSettings = document.getElementById('menu-settings');
@@ -369,13 +364,13 @@ function initNavigation() {
     console.log('Навигация инициализирована');
 }
 
-// Инициализация всех аватаров
+
 function initAllAvatars() {
     console.log('Инициализация аватаров...');
     loadMembers();
 }
 
-// Инициализация участников
+
 function initMembers() {
     console.log('Инициализация участников...');
     loadMembers();
@@ -408,7 +403,7 @@ function initMembers() {
     }
 }
 
-// Загрузка участников
+
 function loadMembers() {
     const container = document.getElementById('members-container');
     if (!container) {
@@ -437,7 +432,7 @@ function loadMembers() {
         container.appendChild(card);
     });
     
-    // Добавляем обработчики кликов на карточки
+   
     document.querySelectorAll('.member-card').forEach(card => {
         card.addEventListener('click', function() {
             const memberId = this.dataset.id;
@@ -449,7 +444,7 @@ function loadMembers() {
     console.log('Участники загружены:', sortedMembers.length);
 }
 
-// Создание карточки участника
+
 function createMemberCard(member) {
     const card = document.createElement('div');
     card.className = 'member-card';
@@ -463,7 +458,7 @@ function createMemberCard(member) {
     if (member.pinned) badges += '📍 ';
     if (member.verified) badges += '✓ ';
     
-    // Создаем ID для аватара
+  
     const avatarId = `avatar-${member.id}`;
     
     card.innerHTML = `
@@ -484,7 +479,7 @@ function createMemberCard(member) {
         </div>
     `;
     
-    // Загружаем аватар после создания элемента
+  
     setTimeout(() => {
         const img = card.querySelector(`#${avatarId}`);
         if (img) {
@@ -495,7 +490,7 @@ function createMemberCard(member) {
     return card;
 }
 
-// Фильтрация участников
+
 function filterMembers(category) {
     const cards = document.querySelectorAll('.member-card');
     console.log('Фильтрация участников по категории:', category, 'найдено карточек:', cards.length);
@@ -515,7 +510,6 @@ function filterMembers(category) {
     });
 }
 
-// Поиск участников
 function searchMembers(term) {
     const cards = document.querySelectorAll('.member-card');
     const activeFilter = document.querySelector('.filter-btn.active')?.dataset.category || 'all';
@@ -541,7 +535,6 @@ function searchMembers(term) {
     });
 }
 
-// Дополнительные функции для отображения кнопок
 function createSocialButton(icon, text, url, className = '') {
     if (!url) return '';
     return `
@@ -551,7 +544,7 @@ function createSocialButton(icon, text, url, className = '') {
     `;
 }
 
-// ПОЛНЫЙ ПРОФИЛЬ УЧАСТНИКА
+
 function showProfile(memberId) {
     const member = members.find(m => m.id == memberId);
     if (!member) {
@@ -565,7 +558,6 @@ function showProfile(memberId) {
         return;
     }
     
-    // Форматирование даты
     const joinDate = new Date(member.joinDate);
     const formattedDate = joinDate.toLocaleDateString('ru-RU', {
         year: 'numeric',
@@ -573,7 +565,7 @@ function showProfile(memberId) {
         day: 'numeric'
     });
     
-    // Создание бейджей
+ 
     let badgesHtml = '';
     if (member.verified) badgesHtml += '<span class="badge verified">✓ Верифицирован</span>';
     if (member.pinned) badgesHtml += '<span class="badge pinned">📌 Закреплён</span>';
@@ -587,10 +579,10 @@ function showProfile(memberId) {
     if (member.fameList) mainButtons += createSocialButton('fas fa-list', 'Фейм лист', member.fameList);
     if (member.github) mainButtons += createSocialButton('fab fa-github', 'GitHub', member.github);
     
-    // Дополнительные кнопки
+  
     let extraButtons = '';
     
-    // Все возможные ссылки с иконками (система готова для добавления новых ссылок)
+   
     const allPossibleLinks = {
         'price': {icon: 'fas fa-tag', text: 'Прайс'},
         'priceList': {icon: 'fas fa-tags', text: 'Прайс-лист'},
@@ -611,14 +603,13 @@ function showProfile(memberId) {
         'private': {icon: 'fas fa-lock', text: 'Приват'}
     };
     
-    // Проверяем каждую возможную ссылку в объекте участника
     Object.keys(allPossibleLinks).forEach(key => {
         if (member[key]) {
             extraButtons += createSocialButton(allPossibleLinks[key].icon, allPossibleLinks[key].text, member[key]);
         }
     });
     
-    // Статистика
+
     const stats = {
         'Статус': member.role,
         'Верификация': member.verified ? '✓ Подтверждён' : '✗ Не подтверждён',
@@ -629,7 +620,6 @@ function showProfile(memberId) {
         'ID': member.id
     };
     
-    // Добавляем цены если есть
     if (member.priceEntry) stats['Цена входа'] = member.priceEntry;
     if (member.priceVerified) stats['Цена галочки'] = member.priceVerified;
     if (member.pricePinned) stats['Цена закрепа'] = member.pricePinned;
@@ -646,7 +636,6 @@ function showProfile(memberId) {
         }
     });
     
-    // ID для аватара профиля
     const profileAvatarId = `profile-avatar-${member.id}`;
     
     container.innerHTML = `
@@ -703,7 +692,7 @@ function showProfile(memberId) {
         </div>
     `;
     
-    // Загружаем аватар профиля
+
     setTimeout(() => {
         const img = document.getElementById(profileAvatarId);
         if (img) {
@@ -714,7 +703,7 @@ function showProfile(memberId) {
     switchSection('profile-details');
 }
 
-// Инициализация снега
+
 function initSnow() {
     const snowContainer = document.querySelector('.snow-container');
     if (!snowContainer) return;
@@ -735,7 +724,7 @@ function initSnow() {
     }
 }
 
-// Создание снежинок
+
 function createSnowflakes() {
     const snowContainer = document.querySelector('.snow-container');
     if (!snowContainer) return;
@@ -763,7 +752,7 @@ function createSnowflakes() {
     }
 }
 
-// Инициализация настроек
+
 function initSettings() {
     const settingsTabs = document.querySelectorAll('.settings-tab');
     const tabContents = document.querySelectorAll('.tab-content');
@@ -832,7 +821,7 @@ function initSettings() {
     }
 }
 
-// Инициализация контролов неона
+
 function initNeonControls() {
     const neonColor = document.getElementById('neon-color');
     const neonIntensity = document.getElementById('neon-intensity');
@@ -887,7 +876,7 @@ function initNeonControls() {
     }
 }
 
-// Применение настроек неона
+
 function applyNeonSettings(color, intensity, speed) {
     currentNeonColor = color;
     currentNeonIntensity = intensity;
@@ -900,7 +889,7 @@ function applyNeonSettings(color, intensity, speed) {
     initDynamicNeon();
 }
 
-// Динамический неон
+
 function initDynamicNeon() {
     const oldStyle = document.getElementById('dynamic-neon-style');
     if (oldStyle) oldStyle.remove();
@@ -959,7 +948,7 @@ function initDynamicNeon() {
     }
 }
 
-// Применение неона к элементам
+
 function applyNeonToElements() {
     document.querySelectorAll('.member-card').forEach(card => {
         card.classList.add('neon-flow');
@@ -979,7 +968,6 @@ function applyNeonToElements() {
     }
 }
 
-// Удаление эффекта переливания
 function removeNeonFlow() {
     document.querySelectorAll('.neon-flow').forEach(el => {
         el.classList.remove('neon-flow');
@@ -989,7 +977,6 @@ function removeNeonFlow() {
     });
 }
 
-// Инициализация анимированного фона
 function initAnimatedBg() {
     const bgSpeed = document.getElementById('bg-speed');
     const bgOpacity = document.getElementById('bg-opacity');
@@ -1012,27 +999,26 @@ function initAnimatedBg() {
     }
 }
 
-// Применение анимированного фона
+
 function applyAnimatedBg() {
     const bgElement = document.getElementById('animated-bg');
     if (!bgElement) return;
-    
-    // Удаляем все классы фонов
+
     allBackgrounds.forEach(bg => {
         bgElement.classList.remove(`${bg}-bg`);
     });
     
-    // Добавляем выбранный фон
+    
     bgElement.classList.add(`${currentAnimatedBg}-bg`);
     
     // Настраиваем скорость анимации
     const speed = currentBgSpeed / 10;
     bgElement.style.animationDuration = `${20 / speed}s`;
     
-    // Настраиваем прозрачность
+    
     bgElement.style.opacity = currentBgOpacity;
     
-    // Сохраняем настройки
+ 
     localStorage.setItem('fame_animated_bg', currentAnimatedBg);
     localStorage.setItem('fame_bg_speed', currentBgSpeed);
     localStorage.setItem('fame_bg_opacity', currentBgOpacity);
@@ -1040,7 +1026,7 @@ function applyAnimatedBg() {
     console.log('Фон применен:', currentAnimatedBg);
 }
 
-// Инициализация модальных окон
+
 function initModals() {
     console.log('Инициализация модальных окон...');
     
@@ -1059,7 +1045,7 @@ function initModals() {
     console.log('Модальные окна инициализированы');
 }
 
-// Открытие модального окна
+
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
@@ -1071,7 +1057,7 @@ function openModal(modalId) {
     }
 }
 
-// Закрытие модального окна
+
 function closeModal(modal) {
     if (modal) {
         modal.classList.remove('active');
@@ -1080,26 +1066,25 @@ function closeModal(modal) {
     }
 }
 
-// Загрузка сохраненных настроек - ОБНОВЛЕНО ДЛЯ ЧЕРНОЙ ТЕМЫ ПО УМОЛЧАНИЮ
+
 function loadSavedSettings() {
     console.log('Загрузка сохраненных настроек...');
-    
-    // Тема - установлена черная по умолчанию
-    const savedTheme = localStorage.getItem('fame_theme') || 'black'; // По умолчанию черная
+   
+    const savedTheme = localStorage.getItem('fame_theme') || 'black'; 
     if (savedTheme) {
         const themeOption = document.querySelector(`.theme-option[data-theme="${savedTheme}"]`);
         if (themeOption) {
             themeOption.click();
         } else {
-            // Если тема не найдена, применяем черную по умолчанию
+          
             applyTheme('black');
         }
     } else {
-        // Если нет сохраненной темы, применяем черную
+     
         applyTheme('black');
     }
     
-    // Фон
+   
     const savedBg = localStorage.getItem('fame_background');
     if (savedBg) {
         document.body.style.backgroundImage = `url(${savedBg})`;
@@ -1108,7 +1093,7 @@ function loadSavedSettings() {
         document.body.style.backgroundPosition = 'center';
     }
     
-    // Настройки неона
+   
     const savedNeonColor = localStorage.getItem('fame_neon_color') || '#808080';
     const savedNeonIntensity = parseFloat(localStorage.getItem('fame_neon_intensity')) || 0.5;
     const savedNeonSpeed = parseInt(localStorage.getItem('fame_neon_speed')) || 5;
@@ -1123,7 +1108,7 @@ function loadSavedSettings() {
     
     applyNeonSettings(savedNeonColor, savedNeonIntensity, savedNeonSpeed);
     
-    // Анимированный фон
+
     const savedAnimatedBg = localStorage.getItem('fame_animated_bg') || 'hooks';
     const savedBgSpeed = parseInt(localStorage.getItem('fame_bg_speed')) || 10;
     const savedBgOpacity = parseFloat(localStorage.getItem('fame_bg_opacity')) || 0.5;
@@ -1140,7 +1125,7 @@ function loadSavedSettings() {
     
     applyAnimatedBg();
     
-    // Эффект переливания
+ 
     const savedNeonFlow = localStorage.getItem('fame_neon_flow');
     const neonFlowCheckbox = document.getElementById('neon-flow-effect');
     if (neonFlowCheckbox) {
@@ -1152,7 +1137,7 @@ function loadSavedSettings() {
         }
     }
     
-    // Снег
+   
     const savedSnow = localStorage.getItem('fame_snow');
     const snowCheckbox = document.getElementById('snow-effect');
     if (snowCheckbox) {
@@ -1166,7 +1151,6 @@ function loadSavedSettings() {
     }
 }
 
-// Применение темы
 function applyTheme(theme) {
     currentTheme = theme;
     
@@ -1180,7 +1164,7 @@ function applyTheme(theme) {
     localStorage.setItem('fame_theme', theme);
 }
 
-// Глобальные функции
+
 window.copyProfileLink = function(username) {
     const link = `https://t.me/NOOLSHY?text=Профиль%20${encodeURIComponent(username)}%20на%20NoolShy%20Fame`;
     navigator.clipboard.writeText(link).then(() => {
@@ -1188,7 +1172,7 @@ window.copyProfileLink = function(username) {
     });
 };
 
-// Сохранение настроек при изменении
+
 document.getElementById('snow-effect')?.addEventListener('change', function() {
     localStorage.setItem('fame_snow', this.checked ? 'enabled' : 'disabled');
 });
@@ -1202,7 +1186,6 @@ document.getElementById('neon-flow-effect')?.addEventListener('change', function
     }
 });
 
-// Функция переключения секций
 function switchSection(sectionId) {
     console.log('Переключение секции:', sectionId);
     
