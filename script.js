@@ -237,6 +237,26 @@ const members = [
         project: "https://t.me/NoolShy",
         }
     },
+                           {
+        id: 12,
+        nickname: "некий свет",
+        username: "@svetosint",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "кланы в которых состаю: #DN, #TP, #KLS, #DDS, #RV Собственный клан: #WS",
+        avatar: "img/avatar12.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+EGcbAsrA1e80OGM8",
+        joinDate: "2026-01-16",
+        activity: "Постоянная",
+         details: "некий свет в NoolShy Fame",
+        skills: ["некий свет — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+        telegram: "@svetosint",
+        project: "https://t.me/+EGcbAsrA1e80OGM8",
+        }
+    },
 ];
 
 
