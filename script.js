@@ -46,8 +46,8 @@ const members = [
         project: "https://t.me/+cr2_Tmjbcqo3YTQy",
         joinDate: "2026-01-08",
         activity: "Постоянная",
-         details: "я позорище",
-        skills: ["я позорище"],
+         details: "замещаю владельца лики зорф когда его нет",
+        skills: ["специалист в деле осинта"],
         socials: {
             telegram: "@vsrns",
             project: "https://t.me/+cr2_Tmjbcqo3YTQy",
