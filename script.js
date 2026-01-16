@@ -143,7 +143,7 @@ const members = [
         username: "@fucKasatnikov",
         category: "Малый фейм",
         role: "Малый фейм",
-        description: "замещаю владельца зорфа если он в афк/оффлайне",
+        description: "Спам, угрозы-чс || кенты-@fulxe @dozrev",
         avatar: "img/avatar7.png",
         verified: false,
         pinned: false,
@@ -155,6 +155,46 @@ const members = [
         socials: {
         telegram: "@fucKasatnikov",
         project: "https://t.me/+T5zkxmRwJrE1OTBl",
+        }
+    },
+            {
+        id: 8,
+        nickname: "𝗰𝗲𝗻𝘁𝗿𝗮𝗹𝗲𝘁𝘆",
+        username: "@centralety_intelligence",
+        category: "Малый фейм",
+        role: "Малый фейм",
+        description: "adapter @adaptcent",
+        avatar: "img/avatar8.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/httpsubject",
+        joinDate: "2026-01-16",
+        activity: "Постоянная",
+         details: "𝗰𝗲𝗻𝘁𝗿𝗮𝗹𝗲𝘁𝘆 личность в NoolShy Fame",
+        skills: ["𝗰𝗲𝗻𝘁𝗿𝗮𝗹𝗲𝘁𝘆 — это человек который имеет малую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+        telegram: "@centralety_intelligence",
+        project: "https://t.me/httpsubject",
+        }
+    },
+                {
+        id: 9,
+        nickname: "Александр Рейдер",
+        username: "@centralety_intelligence",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "t.me/bombsocmint || t.me/pvpraider ||",
+        avatar: "img/avatar9.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/xiiudy",
+        joinDate: "2026-01-16",
+        activity: "Постоянная",
+         details: "Александр Рейдер личность в NoolShy Fame",
+        skills: ["Александр Рейдер — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+        telegram: "@centralety_intelligence",
+        project: "https://t.me/xiiudy",
         }
     },
 ];
