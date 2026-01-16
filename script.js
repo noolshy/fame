@@ -203,7 +203,7 @@ const members = [
         username: "@dozrev",
         category: "Малый фейм",
         role: "Малый фейм",
-        description: "t.me/bombsocmint || t.me/pvpraider ||",
+        description: "мой юзер только @dozrev , за фейков не ручаюсь ",
         avatar: "img/avatar10.png",
         verified: false,
         pinned: false,
