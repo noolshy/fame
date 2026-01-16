@@ -243,7 +243,7 @@ const members = [
         username: "@svetosint",
         category: "Средний фейм",
         role: "Средний фейм",
-        description: "кланы в которых состаю: #DN, #TP, #KLS, #DDS, #RV Собственный клан: #WS",
+        description: "кланы в которых состаю: DN, TP, KLS, DDS, RV Собственный клан: WS",
         avatar: "img/avatar12.png",
         verified: false,
         pinned: false,
