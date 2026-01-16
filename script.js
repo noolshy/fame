@@ -137,6 +137,26 @@ const members = [
             project: "https://t.me/+G7cebeEpqFQyZWZi",
         }
     },
+        {
+        id: 7,
+        nickname: "Касатников",
+        username: "@fucKasatnikov",
+        category: "Малый фейм",
+        role: "Малый фейм",
+        description: "замещаю владельца зорфа если он в афк/оффлайне",
+        avatar: "img/avatar7.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+T5zkxmRwJrE1OTBl",
+        joinDate: "2026-01-16",
+        activity: "Постоянная",
+         details: "Касатников личность в NoolShy Fame",
+        skills: ["Касатников — это человек который имеет малую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+        telegram: "@fucKasatnikov",
+        project: "https://t.me/+T5zkxmRwJrE1OTBl",
+        }
+    },
 ];
 
 
