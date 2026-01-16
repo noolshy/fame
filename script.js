@@ -197,6 +197,26 @@ const members = [
         project: "https://t.me/xiiudy",
         }
     },
+                    {
+        id: 10,
+        nickname: "dozrev I #ᴀɴᴜʙɪs",
+        username: "@dozrev",
+        category: "Малый фейм",
+        role: "Малый фейм",
+        description: "t.me/bombsocmint || t.me/pvpraider ||",
+        avatar: "img/avatar10.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/dozrev1",
+        joinDate: "2026-01-16",
+        activity: "Постоянная",
+         details: "dozrev I #ᴀɴᴜʙɪs личность в NoolShy Fame",
+        skills: ["dozrev I #ᴀɴᴜʙɪs — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+        telegram: "@dozrev",
+        project: "https://t.me/dozrev1",
+        }
+    },
 ];
 
 
