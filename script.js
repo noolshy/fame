@@ -257,6 +257,26 @@ const members = [
         project: "https://t.me/+EGcbAsrA1e80OGM8",
         }
     },
+    {
+        id: 13,
+        nickname: "sleys matrixov",
+        username: "@nnxfx",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "ceo - t.me/vkpresedent |первый не хожу | гарантов не хожу| русский репер подавится русским репом и это будет копрофаг |за дефом - @brezhalov",
+        avatar: "img/avatar13.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/repasleys",
+        joinDate: "2026-01-17",
+        activity: "Постоянная",
+         details: "sleys matrixov в NoolShy Fame",
+        skills: ["sleys matrixov — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+        telegram: "@nnxfx",
+        project: "https://t.me/repasleys",
+        }
+    },
 ];
 
 
