@@ -217,6 +217,24 @@ const members = [
         project: "https://t.me/dozrev1",
         }
     },
+                       {
+        id: 11,
+        nickname: "Улыбка",
+        username: "@fuckylibka",
+        category: "Высокий фейм",
+        role: "Высокий фейм",
+        description: "There are no friends on the Internet, there are only accomplices.",
+        avatar: "img/avatar11.png",
+        verified: true,
+        pinned: false,
+        joinDate: "2026-01-16",
+        activity: "Постоянная",
+         details: "Улыбка личность в NoolShy Fame",
+        skills: ["Улыбка — это человек который имеет высокую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+        telegram: "@fuckylibka",
+        }
+    },
 ];
 
 
