@@ -609,33 +609,29 @@ function createMemberCard(member) {
     card.dataset.id = member.id;
     card.dataset.category = member.category;
     
-    if (member.pinned) card.classList.add('pinned');
-    if (member.verified) card.classList.add('verified');
-    
-    let badges = '';
-    if (member.pinned) badges += '📍 ';
-    if (member.verified) badges += '✓ ';
-    
+    if (member.scam) card.classList.add('scam');
+    else if (member.pinned) card.classList.add('pinned');
+    if (member.verified && !member.scam) card.classList.add('verified');
   
     const avatarId = `avatar-${member.id}`;
     
-    card.innerHTML = `
-        <div class="member-avatar" data-initial="${member.nickname.charAt(0).toUpperCase()}">
-            <img id="${avatarId}" 
-                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9IiMzMzMzMzMiPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iNTAiLz48dGV4dCB4PSI1MCIgeT0iNTAiIGR5PSIwLjM1ZW0iIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI0MCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNmZmYiPk48L3RleHQ+PC9zdmc+" 
-                 alt="${member.nickname}"
-                 loading="lazy">
+card.innerHTML = `
+    <div class="member-avatar" data-initial="${member.nickname.charAt(0).toUpperCase()}">
+        <img id="${avatarId}" 
+             src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9IiMzMzMzMzMiPjxyZWN0IHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iNTAiLz48dGV4dCB4PSI5MCIgeT0iNTAiIGR5PSIwLjM1ZW0iIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI0MCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiNmZmYiPk48L3RleHQ+PC9zdmc+" 
+             alt="${member.nickname}"
+             loading="lazy">
+    </div>
+    
+    <div class="member-info">
+        <h3>${member.nickname} ${member.scam ? '⚠️' : (member.verified ? '✓' : '')}</h3>
+        <div class="member-role">${member.role}</div>
+        <p class="member-description">${member.description}</p>
+        <div class="member-badges">
+            ${member.scam ? '⚠️ ' : ''}${member.pinned ? '📍 ' : ''}${member.verified ? '✓ ' : ''}${member.category}
         </div>
-        
-        <div class="member-info">
-            <h3>${member.nickname} ${member.verified ? '✓' : ''}</h3>
-            <div class="member-role">${member.role}</div>
-            <p class="member-description">${member.description}</p>
-            <div class="member-badges">
-                ${badges}${member.category}
-            </div>
-        </div>
-    `;
+    </div>
+`;
     
   
     setTimeout(() => {
@@ -724,10 +720,14 @@ function showProfile(memberId) {
     });
     
  
-    let badgesHtml = '';
-    if (member.verified) badgesHtml += '<span class="badge verified">✓ Верифицирован</span>';
-    if (member.pinned) badgesHtml += '<span class="badge pinned">📌 Закреплён</span>';
-    badgesHtml += `<span class="badge category">${member.category}</span>`;
+let badgesHtml = '';
+if (member.scam) {
+    badgesHtml += '<span class="badge scam">⚠️ Скам (Осторожно!)</span>';
+} else if (member.verified) {
+    badgesHtml += '<span class="badge verified">✓ Верифицирован</span>';
+}
+if (member.pinned) badgesHtml += '<span class="badge pinned">📌 Закреплён</span>';
+badgesHtml += `<span class="badge category">${member.category}</span>`;
     
     // Основные кнопки
     let mainButtons = createSocialButton('fab fa-telegram', 'Написать в ЛС', `https://t.me/${member.telegram}`, 'telegram');
