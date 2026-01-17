@@ -609,18 +609,6 @@ function initNavigation() {
         });
     }
     
-    if (animatedBgBtn) {
-        animatedBgBtn.addEventListener('click', () => {
-            openModal('animated-bg-modal');
-        });
-    }
-    
-    if (menuAnimatedBg) {
-        menuAnimatedBg.addEventListener('click', () => {
-            openModal('animated-bg-modal');
-            if (sideMenu) sideMenu.classList.remove('active');
-        });
-    }
     
     console.log('Навигация инициализирована');
 }
