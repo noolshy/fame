@@ -277,6 +277,84 @@ const members = [
         project: "https://t.me/repasleys",
         }
     },
+{
+    id: 14,
+    nickname: "Модератор",
+    username: "@moderator",
+    category: "Модераторы",
+    role: "Модератор",
+    description: "Модератор чата NoolShy Fame",
+    avatar: "img/avatar14.png",
+    verified: true,
+    pinned: false,
+    project: "https://t.me/NoolShy",
+    joinDate: "2026-01-17",
+    activity: "Активный",
+    details: "Отвечаю за порядок в чате",
+    skills: ["Модерация", "Помощь новичкам"],
+    socials: {
+        telegram: "@moderator"
+    }
+},
+
+
+{
+    id: 15,
+    nickname: "Гарант",
+    username: "@garant",
+    category: "Гаранты",
+    role: "Гарант",
+    description: "Официальный гарант сделок",
+    avatar: "img/avatar15.png",
+    verified: true,
+    pinned: true,
+    project: "https://t.me/NoolShy",
+    joinDate: "2026-01-17",
+    activity: "Активный",
+    details: "Провожу безопасные сделки",
+    skills: ["Гарант сделок", "Посредник"],
+    socials: {
+        telegram: "@garant"
+    }
+},
+{
+    id: 16,
+    nickname: "Кодер",
+    username: "@coder",
+    category: "Кодеры",
+    role: "Разработчик",
+    description: "Разработчик ботов и сайтов",
+    avatar: "img/avatar16.png",
+    verified: true,
+    pinned: false,
+    project: "https://t.me/NoolShy",
+    joinDate: "2026-01-17",
+    activity: "Активный",
+    details: "Создаю ботов и веб-приложения",
+    skills: ["JavaScript", "Python", "Telegram API"],
+    socials: {
+        telegram: "@coder",
+        github: "https://github.com/coder"
+    }
+},
+
+{
+    id: 17,
+    nickname: "Скамер",
+    username: "@scammer",
+    category: "Скам",
+    role: "Скам",
+    description: "Внимание! Известный скамер",
+    avatar: "img/avatar17.png",
+    verified: false,
+    pinned: true,
+    project: "",
+    joinDate: "2026-01-17",
+    activity: "Не активен",
+    details: "Известен мошенническими схемами",
+    skills: ["Мошенничество"],
+    socials: {}
+}
 ];
 
 
