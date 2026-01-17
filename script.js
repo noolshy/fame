@@ -357,17 +357,6 @@ const members = [
 }
 ];
 
-
-const allBackgrounds = [
-    'particles', 'waves', 'pulse', 'hooks', 'circuit',
-    'grid', 'dots', 'lines', 'hexagon', 'triangles',
-    'squares', 'circles', 'nebula', 'galaxy', 'cosmic',
-    'stardust', 'matrix', 'cyberpunk', 'circuit2', 'glitch',
-    'rain', 'fire', 'water', 'wind', 'vortex',
-    'spiral', 'radar', 'sonar'
-];
-
-
 let currentTheme = 'black';
 let currentNeonColor = '#808080';
 let currentNeonIntensity = 0.5;
