@@ -1368,25 +1368,7 @@ function loadSavedSettings() {
     if (neonSpeed) neonSpeed.value = savedNeonSpeed;
     
     applyNeonSettings(savedNeonColor, savedNeonIntensity, savedNeonSpeed);
-    
-
-    const savedAnimatedBg = localStorage.getItem('fame_animated_bg') || 'hooks';
-    const savedBgSpeed = parseInt(localStorage.getItem('fame_bg_speed')) || 10;
-    const savedBgOpacity = parseFloat(localStorage.getItem('fame_bg_opacity')) || 0.5;
-    
-    currentAnimatedBg = savedAnimatedBg;
-    currentBgSpeed = savedBgSpeed;
-    currentBgOpacity = savedBgOpacity;
-    
-    const bgSpeed = document.getElementById('bg-speed');
-    const bgOpacity = document.getElementById('bg-opacity');
-    
-    if (bgSpeed) bgSpeed.value = savedBgSpeed;
-    if (bgOpacity) bgOpacity.value = savedBgOpacity * 100;
-    
-    applyAnimatedBg();
-    
- 
+         
     const savedNeonFlow = localStorage.getItem('fame_neon_flow');
     const neonFlowCheckbox = document.getElementById('neon-flow-effect');
     if (neonFlowCheckbox) {
