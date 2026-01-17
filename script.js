@@ -384,13 +384,11 @@ document.addEventListener('DOMContentLoaded', function() {
     initSnow();
     initSettings();
     initNeonControls();
-    initAnimatedBg();
     initModals();
     loadSavedSettings();
     initDynamicNeon();
     initAllAvatars();
     
-    generateBgGrid();
 });
 
 function generateBgGrid() {
