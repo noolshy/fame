@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - NoolShy Fame</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Стили из login.html плюс: */
+        .password-strength {
+            margin-top: 5px;
+            font-size: 0.85rem;
+        }
+        
+        .strength-weak { color: #ff4444; }
+        .strength-medium { color: #ffaa00; }
+        .strength-strong { color: #0f0; }
+        
+        .requirements {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .requirements h4 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        
+        .requirements ul {
+            padding-left: 20px;
+        }
+        
+        .requirements li {
+            margin-bottom: 5px;
+        }
+        
+        .requirement-met {
+            color: #0f0;
+        }
+        
+        .requirement-not-met {
+            color: #ff4444;
+        }
+    </style>
+</head>
+<body class="black-theme">
+    <div class="snow-container"></div>
+    
+    <nav class="top-nav">
+        <div class="nav-left">
+            <a href="index.html" class="logo-link">
+                <h1 class="logo text-neon-flow">NoolShy Fame</h1>
+            </a>
+        </div>
+        <div class="nav-right">
+            <a href="index.html" class="nav-icon" title="На главную">
+                <i class="fas fa-home"></i>
+            </a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="auth-container">
+            <h2 class="auth-title"><i class="fas fa-user-plus"></i> Регистрация</h2>
+            
+            <div class="error-message" id="error-message"></div>
+            <div class="success-message" id="success-message"></div>
+            
+            <form class="auth-form" id="register-form">
+                <div class="form-group">
+                    <label for="username"><i class="fas fa-user"></i> Имя пользователя</label>
+                    <input type="text" id="username" name="username" required minlength="3" maxlength="20">
+                    <small>От 3 до 20 символов (только буквы, цифры и _)</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password"><i class="fas fa-lock"></i> Пароль</label>
+                    <input type="password" id="password" name="password" required minlength="8">
+                    <div class="password-strength" id="password-strength"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password"><i class="fas fa-lock"></i> Подтвердите пароль</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                        Я согласен с <a href="terms.html">правилами использования</a>
+                    </label>
+                </div>
+                
+                <button type="submit" class="auth-btn">
+                    <i class="fas fa-user-plus"></i> Зарегистрироваться
+                </button>
+            </form>
+            
+            <div class="requirements">
+                <h4>Требования к паролю:</h4>
+                <ul>
+                    <li id="req-length">Минимум 8 символов</li>
+                    <li id="req-uppercase">Хотя бы одна заглавная буква</li>
+                    <li id="req-lowercase">Хотя бы одна строчная буква</li>
+                    <li id="req-number">Хотя бы одна цифра</li>
+                    <li id="req-special">Хотя бы один специальный символ</li>
+                </ul>
+            </div>
+            
+            <div class="auth-links">
+                <p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+                <p><a href="index.html">Вернуться на главную</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="auth.js"></script>
+</body>
+</html>
