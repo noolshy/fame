@@ -296,6 +296,26 @@ const members = [
         project: "https://t.me/+bv6-_lZkKPdmMWM0",
         }
     },
+            {
+        id: 15,
+        nickname: "Swaterov",
+        username: "@usersuicide1488",
+        category: "Малый фейм",
+        role: "Малый фейм",
+        description: "Сошлись на эйфории, разошлись на отходосах.",
+        avatar: "img/avatar15.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+fMQbq3v86h42ZWU6",
+        joinDate: "2026-01-17",
+        activity: "Постоянная",
+         details: "Swaterov в NoolShy Fame",
+        skills: ["Swaterov — мало  узнаваемая личность в комьюнити"],
+        socials: {
+        telegram: "@usersuicide1488",
+        project: "https://t.me/+fMQbq3v86h42ZWU6",
+        }
+    },
 ];
 
 let currentTheme = 'black';
