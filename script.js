@@ -297,25 +297,6 @@ const members = [
         project: "https://t.me/+bv6-_lZkKPdmMWM0",
         }
     },
-    {
-        id: 15,
-        nickname: "сᴀнти gncd",
-        username: "@orpom",
-        category: "Скам",
-        role: "Скам",
-        description: "скам гарант",
-        avatar: "img/scammer1.png",
-        verified: false,
-        pinned: false,
-        scam: true,
-        joinDate: "2026-01-18",
-        activity: "скам",
-         details: "скам гарант его нфт юз https://t.me/goodsdick",
-        skills: ["скам гарант его нфт юз https://t.me/goodsdick"],
-        socials: {
-        telegram: "@orpom",
-     }
-    },
 ];
 
 let currentTheme = 'black';
