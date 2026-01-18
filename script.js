@@ -277,6 +277,26 @@ const members = [
         project: "https://t.me/repasleys",
         }
     },
+        {
+        id: 14,
+        nickname: "stvanted",
+        username: "@dxdurov",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "Ceo nwchnllll.t.me frozenlogs.t.me деф def_hirurg.t.me & reviews Ostvantedgod.t.me друг @godsophia",
+        avatar: "img/avatar14.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+bv6-_lZkKPdmMWM0",
+        joinDate: "2026-01-17",
+        activity: "Постоянная",
+         details: "stvanted в NoolShy Fame",
+        skills: ["stvanted — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+        telegram: "@dxdurov",
+        project: "https://t.me/+bv6-_lZkKPdmMWM0",
+        }
+    },
 ];
 
 let currentTheme = 'black';
