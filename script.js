@@ -314,6 +314,8 @@ const members = [
         skills: ["скам гарант его нфт юз https://t.me/goodsdick"],
         socials: {
         telegram: "@orpom",
+     }
+    },
 ];
 
 let currentTheme = 'black';
