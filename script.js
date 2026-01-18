@@ -297,28 +297,23 @@ const members = [
         project: "https://t.me/+bv6-_lZkKPdmMWM0",
         }
     },
-        {
+    {
         id: 15,
         nickname: "сᴀнти gncd",
         username: "@orpom",
         category: "Скам",
         role: "Скам",
-        description: "скам гарант(он сам подвердил его | его нфт юз https://t.me/goodsdick",
-        avatar: "img/scammer1.png", 
+        description: "скам гарант",
+        avatar: "img/scammer1.png",
         verified: false,
         pinned: false,
-        scam: true, 
-        scamAmount: "10000р+",
-        scamType: "нфт/денежный обман",
-        scamEvidence: "скам гарант",
-        warnings: [
-            "Обман при оплате услуг",
-            "Поддельные гарантии",
-            "Исчез после получения денег"
-            ],
-        details: "Скаммер, известный под ником СКАМЕР#001. Обманул несколько пользователей на сумму от 60000 до 500000 рублей под предлогом оказания услуг. После получения предоплаты перестал выходить на связь.",
-        skills: ["Обман", "Мошенничество", "Исчезновение после оплаты"],
-        socials: {} 
+        scam: true,
+        joinDate: "2026-01-18",
+        activity: "скам",
+         details: "скам гарант его нфт юз https://t.me/goodsdick",
+        skills: ["скам гарант его нфт юз https://t.me/goodsdick"],
+        socials: {
+        telegram: "@orpom",
 ];
 
 let currentTheme = 'black';
