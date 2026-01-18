@@ -1188,7 +1188,7 @@ function applyAnimatedBg() {
     
     bgElement.classList.add(`${currentAnimatedBg}-bg`);
     
-    // Настраиваем скорость анимации
+
     const speed = currentBgSpeed / 10;
     bgElement.style.animationDuration = `${20 / speed}s`;
     
