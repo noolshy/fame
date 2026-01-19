@@ -364,7 +364,7 @@ const members = [
         role: "Медийка",
         description: "проект RagWer работаем и учимся вместе — Rag_Wer.t.me | форум - @hardforym | @km1cool | #dmd",
         avatar: "img/avatar18.png",
-        verified: true,
+        verified: false,
         pinned: false,
         project: "https://t.me/Rag_Wer",
         joinDate: "2026-01-19",
