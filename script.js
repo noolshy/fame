@@ -629,7 +629,7 @@ const members = [
         description: "менеджер- @oetowv сб- @Sbbotmy_bot лист- @list_compova",
         avatar: "img/avatar31.png",
         verified: false,
-        pinned: false,
+        pinned: true,
         project: "https://t.me/chat_compova",
         joinDate: "2026-01-17",
         activity: "Постоянная",
