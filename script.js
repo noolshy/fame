@@ -356,6 +356,26 @@ const members = [
         project: "https://t.me/+e6YzF5gT7gRkNmVi",
         }
     },
+            {
+        id: 18,
+        nickname: "верпис",
+        username: "@sexboykm",
+        category: "Медийки",
+        role: "Медийка",
+        description: "CEO https://t.me/haetripovadap",
+        avatar: "img/avatar18.png",
+        verified: true,
+        pinned: false,
+        project: "https://t.me/Rag_Wer",
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+         details: "верпис в NoolShy Fame",
+        skills: ["верпис довольно медийная личность", "Развитие личности"],
+        socials: {
+        telegram: "@sexboykm",
+        project: "https://t.me/Rag_Wer",
+        }
+    },
 ];
 
 let currentTheme = 'black';
