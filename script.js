@@ -316,6 +316,25 @@ const members = [
         project: "https://t.me/+fMQbq3v86h42ZWU6",
         }
     },
+    {
+            id: 16,
+        nickname: "шілл",
+        username: "@shill_404",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "CEO https://t.me/adapter_zxk https://t.me/+3xOIZhq0isI4NWZi",
+        avatar: "img/avatar16.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+3xOIZhq0isI4NWZi",
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+         details: "шілл в NoolShy Fame",
+        skills: ["шілл — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+        telegram: "@shill_404",
+        project: "https://t.me/+3xOIZhq0isI4NWZi",
+        }
 ];
 
 let currentTheme = 'black';
