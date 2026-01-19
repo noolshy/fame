@@ -1121,6 +1121,26 @@ const members = [
             project: "https://t.me/killsdead",
         }
     },
+                            {
+             id: 56,
+        nickname: "Speilov",
+        username: "@SwastonKM",
+        category: "Кодеры",
+        role: "Кодер",
+        description: "пришел в середине 24 года,отдал год OSINT,на данный момент занимаюсь кодингом HTML/JS/CSS/C++ общаюсь с тирановым ака химиатом поднял популярность засчет своих сайтов",
+        avatar: "img/avatar56.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/heruvimbrat",       
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+        details: "Speilov в NoolShy Fame.",
+        skills: ["Speilov - довольно хороший кодер (признан владельцем фейм листа)"],
+        socials: {
+            telegram: "@SwastonKM",
+            project: "https://t.me/heruvimbrat",
+        }
+    },
 ];
 
 let currentTheme = 'black';
