@@ -1202,6 +1202,27 @@ const members = [
         project: "https://t.me/+p8vsBS-6u_BkNjAy",
         }
     },
+            {
+        id: 60,
+        nickname: "chiko",
+        username: "@TheChiko",
+        category: "Скам",
+        role: "Cкамер",
+        description: "поступила жалоба со всеми скринами скама",
+        avatar: "img/avatar60.png",
+        verified: false,
+        pinned: false,
+        scam: true,
+        project: "https://t.me/chikoZXC",
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+         details: "chiko в NoolShy Fame",
+        skills: ["chiko - скамер на нфи"],
+        socials: {
+        telegram: "@TheChiko",
+        project: "https://t.me/chikoZXC",
+        }
+    },
 ];
 
 let currentTheme = 'black';
