@@ -356,13 +356,13 @@ const members = [
         project: "https://t.me/+e6YzF5gT7gRkNmVi",
         }
     },
-            {
+    {
         id: 18,
         nickname: "верпис",
         username: "@sexboykm",
         category: "Медийки",
         role: "Медийка",
-        description: "проект " RagWer " работаем и учимся вместе — Rag_Wer.t.me | форум - @hardforym | @km1cool | #dmd",
+        description: "проект RagWer работаем и учимся вместе — Rag_Wer.t.me | форум - @hardforym | @km1cool | #dmd",
         avatar: "img/avatar18.png",
         verified: true,
         pinned: false,
