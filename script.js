@@ -376,6 +376,27 @@ const members = [
         project: "https://t.me/Rag_Wer",
         }
     },
+        {
+        id: 19,
+        nickname: "снялцепи",
+        username: "@bogkm",
+        category: "Медийки",
+        role: "Медийка",
+        description: "канал - @snyalcepik | братки - @cepibrat (там раздаю подарки) | подарки от меня🧸 - @cepi_gift | Дешевые звезды - @lsstarsbot",
+        avatar: "img/avatar19.png",
+        verified: false,
+        pinned: false,
+        scam: true,
+        project: "https://t.me/snyalcepik",
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+         details: "снялцепи в NoolShy Fame",
+        skills: ["снялцепи - скам медийка"],
+        socials: {
+        telegram: "@bogkm",
+        project: "https://t.me/snyalcepik",
+        }
+    },
 ];
 
 let currentTheme = 'black';
