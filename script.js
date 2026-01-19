@@ -48,7 +48,7 @@ const members = [
          details: "замещаю владельца лики зорф когда его нет",
         skills: ["специалист в деле осинта"],
         socials: {
-        telegram: "@vsrns",
+        telegram: "vsrns",
         project: "https://t.me/+cr2_Tmjbcqo3YTQy",
         forum: "https://t.me/privatvsrns",
         website: "https://tgshafo.github.io/swerk/",
