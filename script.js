@@ -660,6 +660,26 @@ const members = [
         project: "https://t.me/+cttBtdtlHKY2ZGM0",
         }
     },
+                {
+        id: 33,
+        nickname: "gustav",
+        username: "@usrunet",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "прошлый канал 3к сабов(скрины имеются) | ceo - adpinterpol.t.me × adp - qwegal.t.me × beck in the community fuck children × the best project https://t.me/+TrWacJg3FEw5ZDli",
+        avatar: "img/avatar30.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+TrWacJg3FEw5ZDli",
+        joinDate: "2026-01-17",
+        activity: "Постоянная",
+         details: "gustav в NoolShy Fame",
+        skills: ["gustav — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+        telegram: "@usrunet",
+        project: "https://t.me/+TrWacJg3FEw5ZDli",
+        }
+    },
 ];
 
 let currentTheme = 'black';
