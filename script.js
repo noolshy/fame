@@ -278,7 +278,7 @@ const members = [
     },
         {
         id: 14,
-        nickname: "stvanted",
+        nickname: "Ostvanted",
         username: "@dxdurov",
         category: "Средний фейм",
         role: "Средний фейм",
@@ -289,8 +289,8 @@ const members = [
         project: "https://t.me/+bv6-_lZkKPdmMWM0",
         joinDate: "2026-01-17",
         activity: "Постоянная",
-         details: "stvanted в NoolShy Fame",
-        skills: ["stvanted — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+         details: "Ostvanted в NoolShy Fame",
+        skills: ["Ostvanted — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
         socials: {
         telegram: "@dxdurov",
         project: "https://t.me/+bv6-_lZkKPdmMWM0",
