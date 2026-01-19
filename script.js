@@ -649,7 +649,7 @@ const members = [
         description: "Не суди и судим будешь | Нью тгк - https://t.me/+cttBtdtlHKY2ZGM0 | Бесплатно ничего не делаю. | Спам = ЧС ! | repa - @otzvrendy",
         avatar: "img/avatar32.png",
         verified: false,
-        pinned: false,
+        pinned: true,
         project: "https://t.me/+cttBtdtlHKY2ZGM0",
         joinDate: "2026-01-19",
         activity: "Постоянная",
