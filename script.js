@@ -418,6 +418,48 @@ const members = [
         project: "https://t.me/loxssy52",
         }
     },
+                {
+        id: 21,
+        nickname: "cwex",
+        username: "@fuckcwex",
+        category: "Медийки",
+        role: "Медийка",
+        description: "channel - t.me/+gTLb2OOaE09jNzI0 $ chat - t.me/+ph4okn66zkVlYWY0 $ my blog - blbuis.t.me $ rep - @revivies $ gift from me - mishkacwex.t.me",
+        avatar: "img/avatar21.png",
+        verified: false,
+        pinned: false,
+        scam: true,
+        project: "https://t.me/+gTLb2OOaE09jNzI0",
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+         details: "cwex NoolShy Fame",
+        skills: ["cwex - скам медийка"],
+        socials: {
+        telegram: "@fuckcwex",
+        project: "https://t.me/+gTLb2OOaE09jNzI0",
+        }
+    },
+                {
+        id: 22,
+        nickname: "тихо",
+        username: "@oexec",
+        category: "Медийки",
+        role: "Медийка",
+        description: "дефы- @aftter, @bogkm | прайс - https://t.me/+0NUAZTHsZfYyMmZk",
+        avatar: "img/avatar22.png",
+        verified: false,
+        pinned: false,
+        scam: true,
+        project: "https://t.me/ucvka",
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+         details: "тихо NoolShy Fame",
+        skills: ["тихо - скам медийка"],
+        socials: {
+        telegram: "@oexec",
+        project: "https://t.me/ucvka",
+        }
+    },
 ];
 
 let currentTheme = 'black';
