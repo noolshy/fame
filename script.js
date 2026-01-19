@@ -1127,7 +1127,7 @@ const members = [
         nickname: "Speilov",
         username: "@SwastonKM",
         category: "Кодеры",
-        role: "Кодер",
+        role: "Кодеры",
         description: "пришел в середине 24 года,отдал год OSINT,на данный момент занимаюсь кодингом HTML/JS/CSS/C++ общаюсь с тирановым ака химиатом поднял популярность засчет своих сайтов",
         avatar: "img/avatar56.png",
         verified: false,
