@@ -5,7 +5,7 @@ const members = [
         username: "@tgzorf",
         category: "Владелец", "Высокий фейм", "Кодеры",
         role: "Владелец",
-        description: "Владелец зорф Fame. Вход 50 зв, галочка 30зв, закреп 50зв.",
+        description: ["Владелец зорф Fame. Вход 50 зв, галочка 30зв, закреп 50зв."],
         avatar: "img/avatar1.png",
         verified: true,
         pinned: true,
