@@ -317,7 +317,7 @@ const members = [
         }
     },
     {
-            id: 16,
+        id: 16,
         nickname: "шілл",
         username: "@shill_404",
         category: "Средний фейм",
@@ -335,6 +335,7 @@ const members = [
         telegram: "@shill_404",
         project: "https://t.me/+3xOIZhq0isI4NWZi",
         }
+    },
 ];
 
 let currentTheme = 'black';
