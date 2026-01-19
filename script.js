@@ -366,14 +366,14 @@ const members = [
         avatar: "img/avatar18.png",
         verified: false,
         pinned: false,
-        project: "https://t.me/Rag_Wer",
+        project: "https://t.me/+NQmhHM1vv54xZTcy",
         joinDate: "2026-01-19",
         activity: "Постоянная",
          details: "верпис в NoolShy Fame",
         skills: ["верпис довольно медийная личность", "Развитие личности"],
         socials: {
         telegram: "@sexboykm",
-        project: "https://t.me/Rag_Wer",
+        project: "https://t.me/+NQmhHM1vv54xZTcy",
         }
     },
         {
