@@ -1141,6 +1141,46 @@ const members = [
             project: "https://t.me/heruvimbrat",
         }
     },
+                        {
+        id: 57,
+        nickname: "Cloyzes",
+        username: "@viase",
+        category: "Высокий фейм",
+        role: "Высокий фейм",
+        description: "Я пришёл в комьюнити в 2020 году, затем на год ушёл из-за сноса аккаунта, но сейчас вернулся. В данный момент я занимаюсь проектом Восхождение Интернета, также являюсь со-основателем Легитивного Интернета и Metadoth Ex Exploit.in 2.0. У меня дружеские отношения с Морфеем (@ownermaniac), Деспайтом (@killdespite), Травмой (@swatuq), Сириусом и Лордом Фардо (бывший Дарион) Картезом. Ранее я был в хороших отношениях с Вармиловым, но он ушёл из ТГ.",
+        avatar: "img/avatar57.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+E4DrQss_SMQzODhl",
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+         details: "Cloyzes в NoolShy Fame",
+        skills: ["Cloyzes узноваемая личность", "Развитие личности"],
+        socials: {
+        telegram: "@viase",
+        project: "https://t.me/+E4DrQss_SMQzODhl",
+        }
+    },
+                            {
+             id: 58,
+        nickname: "ексеет",
+        username: "@oypsl",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "пришел к комьюнити в 21 году под ликой зайчик, с 23 ливнул, в конце 23 снова пришел, на данный момент имею проект шизофрения ексеета, связь держу почти со всеми феймами, популярность собирал еще в вк, на данный момент - тик ток",
+        avatar: "img/avatar58.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+iQPpsR7a4ttmYjZi",       
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+        details: "ексеет в NoolShy Fame.",
+        skills: ["ексеет — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+            telegram: "@oypsl",
+            project: "https://t.me/+iQPpsR7a4ttmYjZi",
+        }
+    },
 ];
 
 let currentTheme = 'black';
