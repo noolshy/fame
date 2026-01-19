@@ -362,7 +362,7 @@ const members = [
         username: "@sexboykm",
         category: "Медийки",
         role: "Медийка",
-        description: "проект RagWer работаем и учимся вместе — Rag_Wer.t.me | форум - @hardforym | @km1cool | #dmd",
+        description: "проект RagWer работаем и учимся вместе — @Rag_Wer | форум - @hardforym | @km1cool | dmd",
         avatar: "img/avatar18.png",
         verified: false,
         pinned: false,
