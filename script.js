@@ -647,7 +647,7 @@ const members = [
         category: "Медийки",
         role: "Медийка",
         description: "Не суди и судим будешь | Нью тгк - https://t.me/+cttBtdtlHKY2ZGM0 | Бесплатно ничего не делаю. | Спам = ЧС ! | repa - @otzvrendy",
-        avatar: "img/avatar29.png",
+        avatar: "img/avatar32.png",
         verified: false,
         pinned: false,
         project: "https://t.me/+cttBtdtlHKY2ZGM0",
@@ -667,7 +667,7 @@ const members = [
         category: "Средний фейм",
         role: "Средний фейм",
         description: "прошлый канал 3к сабов(скрины имеются) | ceo - adpinterpol.t.me × adp - qwegal.t.me × beck in the community fuck children × the best project https://t.me/+TrWacJg3FEw5ZDli",
-        avatar: "img/avatar30.png",
+        avatar: "img/avatar33.png",
         verified: false,
         pinned: false,
         project: "https://t.me/+TrWacJg3FEw5ZDli",
@@ -678,6 +678,27 @@ const members = [
         socials: {
         telegram: "@usrunet",
         project: "https://t.me/+TrWacJg3FEw5ZDli",
+        }
+    },
+        {
+         id: 34,
+        nickname: "Архилов",
+        username: "@oazev",
+        category: "Малый фейм",
+        role: "Малый фейм",
+        description: "$ adapter - https://noolshy.github.io/oazev $ project - https://t.me/+iDpCmzm-vIYzNGMy $ rep - repoazev.t.me $ spambot - spamoazevbot.t.me",
+        avatar: "img/avatar34.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+iDpCmzm-vIYzNGMy",
+        telegram: "oexwu",       
+        joinDate: "2026-01-08",
+        activity: "Постоянная",
+        details: "Архилов в NoolShy Fame.",
+        skills: ["Архилов — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+            telegram: "@oazev",
+            project: "https://t.me/+iDpCmzm-vIYzNGMy",
         }
     },
 ];
