@@ -1182,6 +1182,26 @@ const members = [
             project: "https://t.me/+iQPpsR7a4ttmYjZi",
         }
     },
+                            {
+        id: 59,
+        nickname: "Взводов",
+        username: "@woqye",
+        category: "Высокий фейм",
+        role: "Высокий фейм",
+        description: "Пришёл в ВК-комьюнити в 19-ом году, был заинтересован этой тематикой, впоследствии перебрался в Telegram.Мой самый популярный проект — «Взвод Безопасности».Имею большое количество знакомых в разных кругах (называть личности не буду).Популярность обрёл благодаря своим знаниям и подаче контента.",
+        avatar: "img/avatar59.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+p8vsBS-6u_BkNjAy",
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+         details: "Взводов в NoolShy Fame",
+        skills: ["Взводов узноваемая личность", "Развитие личности"],
+        socials: {
+        telegram: "@woqye",
+        project: "https://t.me/+p8vsBS-6u_BkNjAy",
+        }
+    },
 ];
 
 let currentTheme = 'black';
