@@ -544,8 +544,8 @@ const members = [
         id: 27,
         nickname: "shazam",
         username: "@cemetery",
-        category: "Средний фейм",
-        role: "Средний фейм",
+        category: "Высокий фейм",
+        role: "Высокий фейм",
         description: "arson specialist, ceo: @ur_4 & @ke_2 & @ki_7 & @ru_4 & @nul_hou | founder of: zigzag shop & @zi_1 & @zi_2",
         avatar: "img/avatar27.png",
         verified: false,
@@ -598,6 +598,26 @@ const members = [
         socials: {
         telegram: "@tixub",
         project: "https://t.me/+K3b9oIFGZv0wMWJi",
+        }
+    },
+            {
+        id: 30,
+        nickname: "DESPITE",
+        username: "@killdespite",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "Project Legitiveinternet.t.me $ price normallykm.t.me $ rep repdespite.t.me $ chat t.me/+fXIRYw2kclE5Y2My",
+        avatar: "img/avatar30.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+uMy0eSXpIH00NGZi",
+        joinDate: "2026-01-17",
+        activity: "Постоянная",
+         details: "DESPITE в NoolShy Fame",
+        skills: ["DESPITE — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+        telegram: "@killdespite",
+        project: "https://t.me/+uMy0eSXpIH00NGZi",
         }
     },
 ];
