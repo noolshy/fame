@@ -949,7 +949,7 @@ const members = [
         role: "Средний фейм",
         description: "• пришёл я тогда когда меня ёбнули на Валиди за просто так когда я был мирняком, вымогали бабки, просили извинений ну и тогда я завёл первого дефа, он меня немножко обучил и я уже пошёл самостоятельно учиться. вот и всё",
         avatar: "img/avatar47.png",
-        verified: false,
+        verified: true,
         pinned: false,
         project: "https://t.me/+d-drHQKkYXg2Njdh",       
         joinDate: "2026-01-19",
@@ -1041,7 +1041,86 @@ const members = [
         project: "https://t.me/rawnodushnyblog",
         }
     },
-
+                        {
+             id: 52,
+        nickname: "čvid апандемия",
+        username: "@apandemiacovid",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "Я пришел в комьюнити из-за своего друга в 20году, пытались выбиться в феймы тогда толком ничего не понимали, в 21году уже что то умели изучали что и как правильно делать в конце 21 года сделали совместный проект название уже не вспомню, иза валлидации друга он ливнул с км  и больше мы с ним не видел",
+        avatar: "img/avatar52.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+sFseHprCMnQwYjRk",       
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+        details: "čvid апандемия в NoolShy Fame.",
+        skills: ["čvid апандемия — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+            telegram: "@apandemiacovid",
+            project: "https://t.me/+sFseHprCMnQwYjRk",
+        }
+    },
+                    {
+             id: 53,
+        nickname: "пропавшая мечта",
+        username: "@juxov",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "я пришёл в км в 2022 году, толком фейма у меня не было, у меня был один успешный проект на одной лике которую я продал там было около 3к сабов и 2,700к просмотров на каждом посту, сейчас же у меня новый проект который я только начал развивать, свою популярность я поднимал благодаря дискорду и сайтам",
+        avatar: "img/avatar53.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+isKgyLNc8GpmMWEy",       
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+        details: "пропавшая мечта в NoolShy Fame.",
+        skills: ["пропавшая мечта — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+            telegram: "@juxov",
+            project: "https://t.me/+isKgyLNc8GpmMWEy",
+        }
+    },
+                        {
+             id: 54,
+        nickname: "Panic",
+        username: "@tmePanic",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "После того как узнал как шумит мефи в комьюнити с валидациями медиек я захотел стать таким как он и начал по чуть чуть создавать свою личность , я был знаком с такими людьми как троффи , ддик и трапрей , после того как я навел немного шума я был снесен , хахаха сам угараю с ситуации и ее тупости",
+        avatar: "img/avatar54.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+8eRfHJE2HNFhYmQx",       
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+        details: "Panic в NoolShy Fame.",
+        skills: ["Panic — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+            telegram: "@tmePanic",
+            project: "https://t.me/+8eRfHJE2HNFhYmQx",
+        }
+    },
+                        {
+             id: 55,
+        nickname: "Психокрайм",
+        username: "@uccru",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "пришел в км в середине 22 года, пришел сюда потому что хотел бороться с скамерами и бичами. Проектов у меня было мало: Фатальный исход который к сожалению  не сильно залетел, ну и мой главный проект Белая Психология вот он уже хорошо поднялся, после я его продал. связи с феймами былм и сейчас есть",
+        avatar: "img/avatar55.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/killsdead",       
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+        details: "Психокрайм в NoolShy Fame.",
+        skills: ["Психокрайм — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+            telegram: "@uccru",
+            project: "https://t.me/killsdead",
+        }
+    },
 ];
 
 let currentTheme = 'black';
