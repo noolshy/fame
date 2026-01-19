@@ -336,6 +336,26 @@ const members = [
         project: "https://t.me/+3xOIZhq0isI4NWZi",
         }
     },
+        {
+        id: 17,
+        nickname: "Haetripov",
+        username: "@haetripov",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "CEO https://t.me/haetripovadap",
+        avatar: "img/avatar17.png",
+        verified: true,
+        pinned: false,
+        project: "https://t.me/+e6YzF5gT7gRkNmVi",
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+         details: "Haetripov в NoolShy Fame",
+        skills: ["Haetripov — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+        telegram: "@haetripov",
+        project: "https://t.me/+e6YzF5gT7gRkNmVi",
+        }
+    },
 ];
 
 let currentTheme = 'black';
