@@ -620,6 +620,26 @@ const members = [
         project: "https://t.me/+uMy0eSXpIH00NGZi",
         }
     },
+                {
+        id: 31,
+        nickname: "compov",
+        username: "@compovv",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "менеджер- @oetowv сб- @Sbbotmy_bot лист- @list_compova",
+        avatar: "img/avatar31.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/chat_compova",
+        joinDate: "2026-01-17",
+        activity: "Постоянная",
+         details: "compov в NoolShy Fame",
+        skills: ["compov — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+        telegram: "@compovv",
+        project: "https://t.me/chat_compova",
+        }
+    },
 ];
 
 let currentTheme = 'black';
