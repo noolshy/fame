@@ -821,6 +821,26 @@ const members = [
         project: "https://t.me/epiotickm",
         }
     },
+        {
+         id: 41,
+        nickname: "Евгений Маньяк",
+        username: "@user19482",
+        category: "Медийки",
+        role: "Медийка",
+        description: "ненависть — это интенсивное, отрицательно окрашенное деструктивное чувство, отражающее неприятие, отвращение и враждебность по отношению к о",
+        avatar: "img/avatar41.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+yrVLFRtabMs0MzU6",
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+         details: "Евгений Маньяк в NoolShy Fame",
+        skills: ["Евгений Маньяк довольно медийная личность", "Развитие личности"],
+        socials: {
+        telegram: "@user19482",
+        project: "https://t.me/+yrVLFRtabMs0MzU6",
+        }
+    },
 ];
 
 let currentTheme = 'black';
