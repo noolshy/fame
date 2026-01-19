@@ -397,6 +397,27 @@ const members = [
         project: "https://t.me/snyalcepik",
         }
     },
+            {
+        id: 20,
+        nickname: "Loxssy",
+        username: "@aftter",
+        category: "Медийки",
+        role: "Медийка",
+        description: "канал - @loxssy52 (за подписку 🎁 ) / 🧸телепортация - @secretloxssy / подарки от меня - @afttergift / ⭐️ дешевые звезды - @lsstarsbot",
+        avatar: "img/avatar20.png",
+        verified: false,
+        pinned: false,
+        scam: true,
+        project: "https://t.me/loxssy52",
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+         details: "Loxssyв NoolShy Fame",
+        skills: ["Loxssy - скам медийка"],
+        socials: {
+        telegram: "@aftter",
+        project: "https://t.me/loxssy52",
+        }
+    },
 ];
 
 let currentTheme = 'black';
