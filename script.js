@@ -640,6 +640,26 @@ const members = [
         project: "https://t.me/chat_compova",
         }
     },
+            {
+        id: 32,
+        nickname: "Ренди Путиновский",
+        username: "@DedRendy",
+        category: "Медийки",
+        role: "Медийка",
+        description: "Не суди и судим будешь | Нью тгк - https://t.me/+cttBtdtlHKY2ZGM0 | Бесплатно ничего не делаю. | Спам = ЧС ! | repa - @otzvrendy",
+        avatar: "img/avatar29.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+cttBtdtlHKY2ZGM0",
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+         details: "Ренди Путиновский в NoolShy Fame",
+        skills: ["Ренди Путиновский довольно медийная личность", "Развитие личности"],
+        socials: {
+        telegram: "@DedRendy",
+        project: "https://t.me/+cttBtdtlHKY2ZGM0",
+        }
+    },
 ];
 
 let currentTheme = 'black';
