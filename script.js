@@ -36,7 +36,7 @@ const members = [
         id: 2,
         nickname: "некий сверк",
         username: "@vsrns",
-        category: "Владелец",
+        category: "Модераторы",
         role: "Co-Owner",
         description: "замещаю владельца зорфа если он в афк/оффлайне",
         avatar: "img/avatar2.png",
