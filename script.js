@@ -1244,6 +1244,26 @@ const members = [
             project: " https://t.me/+0QkfVocIhTo5M2Q6",
         }
     },
+            {
+             id: 62,
+        nickname: "эмпти",
+        username: "@fuckerEmpty",
+        category: "Малый фейм",
+        role: "Малый фейм",
+        description: "пришел в км с 21 года проект был один files community потом его продал но остался админом, связи  с феймами частично есть, поднял фейм из за пиаров в тгк, ходил много раз по кф.",
+        avatar: "img/avatar62.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/Invizial_Games",
+        joinDate: "2026-01-19",
+        activity: "Постоянная",
+         details: "эмпти в NoolShy Fame",
+        skills: ["эмпти малая узноваемость", "Развитие личности"],
+        socials: {
+        telegram: "@fuckerEmpty",
+        project: "https://t.me/Invizial_Games",
+        }
+    },
 ];
 
 let currentTheme = 'black';
