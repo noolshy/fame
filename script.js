@@ -1008,7 +1008,7 @@ const members = [
         username: "@goodsdick",
         category: "Скам",
         role: "Медийка",
-        description: "признался в том что он скам гарант",
+        description: "t.me/user_santy | https://t.me/SantyKm | t.me/santyebetkm | t.me/doxbens | t.me/orpom | t.me/borz | t.me/monk | t.me/valentin | t.me/viptop",
         avatar: "img/avatar50.png",
         verified: false,
         pinned: false,
@@ -1017,7 +1017,7 @@ const members = [
         joinDate: "2026-01-19",
         activity: "Постоянная",
         details: " santy в NoolShy Fame.",
-        skills: [" скам гарант"],
+        skills: [" скам я бы не доверился "],
         socials: {
             telegram: "@goodsdick",
             project: "https://t.me/+n1pQaKmsk9E5NjVl ",
