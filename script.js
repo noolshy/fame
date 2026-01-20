@@ -1346,6 +1346,27 @@ const members = [
             project: "https://t.me/KILLNET_NEW_GENERATION",
         }
     },
+    {
+                 id: 67,
+        nickname: "Форум сверка",
+        username: "@vsrns",
+        category: "Форумы",
+        role: "Форум",
+        description: "облачный форум есть много баз данных дополняется",
+        avatar: "img/avatar67.png",
+        verified: false,
+        pinned: false,
+        forum: "https://t.me/+KNX8i9u6WO4xZWRi",
+        telegram: "oexwu",       
+        joinDate: "2026-01-08",
+        activity: "Постоянная",
+        details: "форум сверка в NoolShy Fame.",
+        skills: ["это форум сверка"],
+        socials: {
+            telegram: "@vsrns",
+            forum: "https://t.me/+KNX8i9u6WO4xZWRi",
+        }
+    },
 ];
 
 let currentTheme = 'black';
