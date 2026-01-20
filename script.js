@@ -1351,7 +1351,7 @@ const members = [
         nickname: "Форум сверка",
         username: "@vsrns",
         category: "Форумы",
-        role: "Форум",
+        role: "Форумы",
         description: "облачный форум есть много баз данных дополняется",
         avatar: "img/avatar67.png",
         verified: false,
