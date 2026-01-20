@@ -891,7 +891,7 @@ const members = [
         description: "В комьюнити с 2023г, привел меня сюда друг, есть проект tpavma end god на 400пдп, связей с феймами не имею, популярность я получил за счет того что я носитель личности травма младший",
         avatar: "img/avatar44.png",
         verified: false,
-        pinned: false,
+        pinned: true,
         project: " https://t.me/+0QkfVocIhTo5M2Q6",     
         joinDate: "2026-01-19",
         activity: "Постоянная",
