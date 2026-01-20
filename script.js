@@ -1224,6 +1224,26 @@ const members = [
         project: "https://t.me/chikoZXC",
         }
     },
+    {
+                 id: 61,
+        nickname: " ᴛᴩᴀʙʍᴀᴛизʍ | abysmal",
+        username: "@tpavmatizm",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "3 года назад пришёл в комьюнити,привел сюда друг.было три проекта 2 закрыл 1 основной.травма младший,геноцид,vesmidov.ходил покф,показывал умения осинт,докс",
+        avatar: "img/avatar61.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+0QkfVocIhTo5M2Q6",     
+        joinDate: "2026-01-20",
+        activity: "Постоянная",
+        details: " ᴛᴩᴀʙʍᴀᴛизʍ | abysmal в NoolShy Fame.",
+        skills: ["т ᴛᴩᴀʙʍᴀᴛизʍ | abysmal — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+            telegram: "@tpavmatizm",
+            project: " https://t.me/+0QkfVocIhTo5M2Q6",
+        }
+    },
 ];
 
 let currentTheme = 'black';
