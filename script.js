@@ -1819,9 +1819,10 @@ if (member.scam) {
 if (member.pinned) badgesHtml += '<span class="badge pinned">📌 Закреплён</span>';
 badgesHtml += `<span class="badge category">${member.category}</span>`;
     
-    // Основные кнопки
+
     let mainButtons = createSocialButton('fab fa-telegram', 'Написать в ЛС', `https://t.me/${member.telegram}`, 'telegram');
     if (member.project) mainButtons += createSocialButton('fas fa-external-link-alt', 'Основной канал', member.project, 'telegram');
+    if (member.forum) mainButtons += createSocialButton('fas fa-userst', 'Форум', member.forum, 'telegram');
     if (member.chat) mainButtons += createSocialButton('fas fa-comments', 'Чат', member.chat, 'telegram');
     if (member.market) mainButtons += createSocialButton('fas fa-shopping-cart', 'Маркет', member.market);
     if (member.fameList) mainButtons += createSocialButton('fas fa-list', 'Фейм лист', member.fameList);
