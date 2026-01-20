@@ -1304,6 +1304,48 @@ const members = [
             project: "https://t.me/augustAwet",
         }
     },
+    {
+             id: 65,
+        nickname: "Atletov",
+        username: "@AtIet0v_ganibal",
+        category: "Малый фейм",
+        role: "Малый фейм",
+        description: "я пришел в км благодаря своей же валидации меня валиднул типок после чего со мной скентился и начал продвигать в этой теме (только он смог меня валиднуть)",
+        avatar: "img/avatar65.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+SnehFICzuCJlMWY6",
+        telegram: "oexwu",       
+        joinDate: "2026-01-20",
+        activity: "Постоянная",
+        details: "Atletov в NoolShy Fame.",
+        skills: ["Atletov — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+            telegram: "@AtIet0v_ganibal",
+            project: "https://t.me/+SnehFICzuCJlMWY6",
+        }
+    },
+            {
+             id: 66,
+        nickname: "ᴋʀɪᴍᴍᴇʀᴏᴡ",
+        username: "@krimerov1",
+        category: "Малый фейм",
+        role: "Малый фейм",
+        description: " познакомился с атлетовым и начали двигаться в месте, вот и после начал свою историю",
+        avatar: "img/avatar66.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/KILLNET_NEW_GENERATION",
+        telegram: "oexwu",       
+        joinDate: "2026-01-08",
+        activity: "Постоянная",
+        details: "ᴋʀɪᴍᴍᴇʀᴏᴡ в NoolShy Fame.",
+        skills: ["ᴋʀɪᴍᴍᴇʀᴏᴡ — это человек который имеет небольшую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+            telegram: "@krimerov1",
+            project: "https://t.me/KILLNET_NEW_GENERATION",
+        }
+    },
 ];
 
 let currentTheme = 'black';
