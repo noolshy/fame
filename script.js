@@ -1264,6 +1264,26 @@ const members = [
         project: "https://t.me/Invizial_Games",
         }
     },
+    {
+                id: 63,
+        nickname: "Vlast 4chan",
+        username: "@shatapovv",
+        category: "Высокий фейм",
+        role: "Высокий фейм",
+        description: "Ещё в далеком 2016 в сообществе форчана и ребит icq Death God сейчас основной Травма,ментовские На валидаций катаны младшего Бесова",
+        avatar: "img/avatar63.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+6oawkAe_rfMwNGEy",
+        joinDate: "2026-01-12",
+        activity: "Постоянная",
+         details: "Vlast 4chan личность в NoolShy Fame.",
+        skills: ["Vlast 4chan — это человек который имеет большую узнаваемость в комьюнити", "Развитие личности"],
+        socials: {
+            telegram: "@shatapovv",
+            project: "https://t.me/+6oawkAe_rfMwNGEy",
+        }
+    },
 ];
 
 let currentTheme = 'black';
