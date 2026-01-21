@@ -1367,6 +1367,26 @@ const members = [
             forum: "https://t.me/+KNX8i9u6WO4xZWRi",
         }
     },
+                {
+        id: 68,
+        nickname: "Майоров Младший",
+        username: "@the_mayorov_maloy",
+        category: "Малый фейм",
+        role: "Малый фейм",
+        description: "Кф не хожу",
+        avatar: "img/avatar68.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+9II_G5JLZQc1N2M0",
+        joinDate: "2026-01-17",
+        activity: "Постоянная",
+         details: "Майоров Младший в NoolShy Fame",
+        skills: ["Майоров Младший — мало  узнаваемая личность в комьюнити"],
+        socials: {
+        telegram: "@the_mayorov_maloy",
+        project: "https://t.me/+9II_G5JLZQc1N2M0",
+        }
+    },
 ];
 
 let currentTheme = 'black';
