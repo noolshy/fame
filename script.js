@@ -1411,6 +1411,30 @@ const members = [
             price: "https://t.me/obyceniewecstor"
         }
     },
+        {
+        id: 69,
+        nickname: "мертвый",
+        username: "@hebwa",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "Кент - @wecstor | проект - [ @cifrkazn ] | младший - @Vkcish | бесплатно не работаю | фри деф - [ @du_def ] | являюсь гарантом|тт - fardment",
+        avatar: "img/avatar69.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/cifrkazn",
+        telegram: "hebwa",
+        price: "https://t.me/looooopet",
+
+        joinDate: "2026-02-05",
+        activity: "Постоянная",
+        details: "мертвый NoolShy Fame. Занимаюсь развитием сообщества и . Отвечаю на вопросы по поводу добавления в список и других услуг.",
+        skills: ["средний фейм", "небольшая узноваемость", "Развитие сообщества"],
+        socials: {
+            telegram: "@hebwa",
+            project: "https://t.me/cifrkazn",
+            price: "https://t.me/looooopet"
+        }
+    },
 ];
 
 let currentTheme = 'black';
