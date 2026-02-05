@@ -1397,10 +1397,9 @@ const members = [
         avatar: "img/avatar72.png",
         verified: true,
         pinned: false,
-        project: "https://t.me/NoolShy",
+        project: "https://t.me/comunityPolice",
         telegram: "wecstor",
-        price: "https://noolshy.github.io/market/",
-        chat: "https://t.me/NOOLSHY_CHAT",
+        price: "https://t.me/obyceniewecstor",
 
         joinDate: "2026-02-05",
         activity: "Постоянная",
@@ -1408,8 +1407,8 @@ const members = [
         skills: ["средний фейм", "небольшая узноваемость", "Развитие сообщества"],
         socials: {
             telegram: "@wecstor",
-            project: "https://t.me/NOOLSHY",
-            price: "https://noolshy.github.io/market/"
+            project: "https://t.me/comunityPolice",
+            price: "https://t.me/obyceniewecstor"
         }
     },
 ];
