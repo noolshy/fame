@@ -1387,6 +1387,31 @@ const members = [
         project: "https://t.me/+9II_G5JLZQc1N2M0",
         }
     },
+        {
+        id: 72,
+        nickname: "wecstor",
+        username: "@wecstor",
+        category: "Средний фейм",
+        role: "Средний фейм",
+        description: "[ @Fardment ] — мой кент км || [ @comunityPolice ] — мой проект || [ @du_def ] бесплатный деф || #инициатор #кланинициаторы за припиской лс",
+        avatar: "img/avatar72.png",
+        verified: true,
+        pinned: false,
+        project: "https://t.me/NoolShy",
+        telegram: "wecstor",
+        price: "https://noolshy.github.io/market/",
+        chat: "https://t.me/NOOLSHY_CHAT",
+
+        joinDate: "2026-02-05",
+        activity: "Постоянная",
+        details: "wecstor NoolShy Fame. Занимаюсь развитием сообщества и модерацией. Отвечаю на вопросы по поводу добавления в список и других услуг.",
+        skills: ["средний фейм", "небольшая узноваемость", "Развитие сообщества"],
+        socials: {
+            telegram: "@wecstor",
+            project: "https://t.me/NOOLSHY",
+            price: "https://noolshy.github.io/market/"
+        }
+    },
 ];
 
 let currentTheme = 'black';
