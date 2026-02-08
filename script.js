@@ -1456,6 +1456,26 @@ const members = [
         forum: "https://t.me/privatvsrns",
         }
     },
+            {
+        id: 71,
+        nickname: "Эмпатия",
+        username: "@alicefake",
+        category: "Медийка",
+        role: "Медийка",
+        description: "$ ceo @adpalicefake",
+        avatar: "img/avatar71.png",
+        verified: false,
+        pinned: true,
+        project: "https://t.me/+iMevwcbURus2YTBh",
+        joinDate: "2026-02-08",
+        activity: "Постоянная",
+         details: "узноваемя личность",
+        skills: [" по приколу поставил медийку"],
+        socials: {
+        telegram: "alicefake",
+        project: "https://t.me/+iMevwcbURus2YTBh",
+        }
+    },
 ];
 
 let currentTheme = 'black';
