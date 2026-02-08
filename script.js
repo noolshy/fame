@@ -1460,7 +1460,7 @@ const members = [
         id: 71,
         nickname: "Эмпатия",
         username: "@alicefake",
-        category: "Медийка",
+        category: "Медийки",
         role: "Медийка",
         description: "$ ceo @adpalicefake",
         avatar: "img/avatar71.png",
