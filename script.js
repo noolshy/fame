@@ -1476,6 +1476,26 @@ const members = [
         project: "https://t.me/+iMevwcbURus2YTBh",
         }
     },
+    {
+        id: 73,
+        nickname: "святын слезы",
+        username: "@mesleza",
+        category: "Медийки",
+        role: "Медийка",
+        description: "Don't cry, ceo - @occmw ¢ непривет.рф| @ogwos $ price - @unplaksa I don't approve of English.km | I'm the original, the rest of the gluttons",
+        avatar: "img/avatar73.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+fs2twJaX0nMwYWYy",
+        joinDate: "2026-02-08",
+        activity: "Постоянная",
+         details: "узноваемя личность",
+        skills: [" 2 овнер эспады"],
+        socials: {
+        telegram: "mesleza",
+        project: "https://t.me/+fs2twJaX0nMwYWYy",
+        }
+    },
 ];
 
 let currentTheme = 'black';
