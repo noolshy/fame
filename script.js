@@ -1435,6 +1435,27 @@ const members = [
             price: "https://t.me/looooopet"
         }
     },
+    {
+        id: 70,
+        nickname: "Громовод 23:44",
+        username: "@pozce",
+        category: "высокий фейм",
+        role: "высокий фейм",
+        description: "Бичи, троли сразу нахуй [в кф хожу по случая] ( Кент @psixokil ) я не в км)",
+        avatar: "img/avatar70.png",
+        verified: true,
+        pinned: true,
+        project: "https://t.me/+DBy7LBwbeqExNmRi",
+        joinDate: "2026-02-08",
+        activity: "Постоянная",
+         details: "узноваемя личность",
+        skills: [" овнер приписки 23:44"],
+        socials: {
+        telegram: "pozce",
+        project: "https://t.me/+DBy7LBwbeqExNmRi",
+        forum: "https://t.me/privatvsrns",
+        }
+    },
 ];
 
 let currentTheme = 'black';
