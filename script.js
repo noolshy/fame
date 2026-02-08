@@ -1478,7 +1478,7 @@ const members = [
     },
     {
         id: 73,
-        nickname: "святын слезы",
+        nickname: "святые слезы",
         username: "@mesleza",
         category: "Медийки",
         role: "Медийка",
