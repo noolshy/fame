@@ -1,4 +1,24 @@
 const members = [
+        {
+        id: 75,
+        nickname: "Milen",
+        username: "@vk1942",
+        category: "средний фейм",
+        role: "средний фейм",
+        description: "смерть в социуме #sks.ru",
+        avatar: "img/avatar75.png",
+        verified: false,
+        pinned: false,
+        project: "https://t.me/+jhC--hUKHi0yMzdh",
+        joinDate: "2026-01-08",
+        activity: "Постоянная",
+         details: "небольшая узноваемость",
+        skills: ["специалист в деле осинта"],
+        socials: {
+        telegram: "vk1942",
+        project: "https://t.me/+jhC--hUKHi0yMzdh",
+        }
+    },
     {
         id: 1,
         nickname: "шот",
