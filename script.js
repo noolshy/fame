@@ -3,7 +3,7 @@ const members = [
         id: 75,
         nickname: "Milen",
         username: "@vk1942",
-        category: "средний фейм",
+        category: "Средний фейм",
         role: "средний фейм",
         description: "смерть в социуме #sks.ru",
         avatar: "img/avatar75.png",
