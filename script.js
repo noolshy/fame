@@ -9,14 +9,14 @@ const members = [
         avatar: "img/avatar75.png",
         verified: false,
         pinned: false,
-        project: "https://t.me/+jhC--hUKHi0yMzdh",
+        project: "https://t.me/+Xp67bRCpAdBiMTYy",
         joinDate: "2026-01-08",
         activity: "Постоянная",
          details: "небольшая узноваемость",
         skills: ["специалист в деле осинта"],
         socials: {
         telegram: "vk1942",
-        project: "https://t.me/+jhC--hUKHi0yMzdh",
+        project: "https://t.me/+Xp67bRCpAdBiMTYy",
         }
     },
     {
