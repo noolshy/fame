@@ -1514,6 +1514,21 @@ const members = [
         socials: {
         telegram: "mesleza",
         project: "https://t.me/+fs2twJaX0nMwYWYy",
+
+                
+        id 79
+        nickname: "федя калашников",
+        username: "@fedyklsh",
+        category: "Владелец",
+        role: "Владелец",
+        description: "Владелец Fame. Вход фри зв, галочка 30зв, закреп 50зв.",
+        avatar: "img/avatar1.png",
+        verified: true,
+        pinned: true,
+        project: "https://t.me/adklsh",
+        telegram: "fedyklsh",
+ }
+},
         }
     },
 ];
