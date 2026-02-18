@@ -1,5 +1,5 @@
 const members = [
-        {
+        {т
         id: 75,
         nickname: "Milen",
         username: "@vk1942",
