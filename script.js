@@ -21,16 +21,16 @@ const members = [
     },
     {
         id: 1,
-        nickname: "шот",
-        username: "@aIIovs",
+        nickname: "федя калашников",
+        username: "@fedyklsh",
         category: "Владелец",
         role: "Владелец",
-        description: "Владелец шот Fame. Вход фри зв, галочка 30зв, закреп 50зв.",
+        description: "Владелец Fame. Вход фри зв, галочка 30зв, закреп 50зв.",
         avatar: "img/avatar1.png",
         verified: true,
         pinned: true,
-        project: "https://t.me/NoolShy",
-        telegram: "aIIovs",
+        project: "https://t.me/adklsh",
+        telegram: "@fedyklsh",
         price: "https://noolshy.github.io/market/",
         chat: "https://t.me/NOOLSHY_CHAT",
         market: "https://noolshy.github.io/market/",
@@ -47,8 +47,8 @@ const members = [
         details: "Создатель и владелец NoolShy Fame. Занимаюсь развитием сообщества и модерацией. Отвечаю на вопросы по поводу добавления в список и других услуг.",
         skills: ["Администрирование", "Модерация", "Развитие сообщества"],
         socials: {
-            telegram: "@tgzorf",
-            project: "https://t.me/NOOLSHY",
+            telegram: "@fedyklsh",
+            project: "https://t.me/adklsh",
             price: "https://noolshy.github.io/market/"
         }
     },
