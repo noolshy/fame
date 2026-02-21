@@ -1,5 +1,5 @@
 const members = [
-        {
+        { 
         id: 75,
         nickname: "Milen",
         username: "@vk1942",
@@ -25,7 +25,7 @@ const members = [
         username: "@fedyklsh",
         category: "Владелец",
         role: "Владелец",
-        description: "Владелец Fame. Вход фри зв, галочка 30зв, закреп 50зв.",
+        description: "Владелец листа. вход бесплатно /  галочка 15 звезд / закреп 25 звезд.",
         avatar: "img/avatar1.png",
         verified: true,
         pinned: true,
