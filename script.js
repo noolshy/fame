@@ -21,16 +21,16 @@ const members = [
     },
     {
         id: 1,
-        nickname: "федя калашников",
-        username: "@fedyklsh",
+        nickname: "Millen",
+        username: "@vk1942",
         category: "Владелец",
         role: "Владелец",
         description: "Владелец листа. вход бесплатно /  галочка 15 звезд / закреп 25 звезд.",
         avatar: "img/avatar1.png",
         verified: true,
         pinned: true,
-        project: "https://t.me/adklsh",
-        telegram: "fedyklsh",
+        project: "https://t.me/+Xp67bRCpAdBiMTYy",
+        telegram: "vk1942",
         price: "https://noolshy.github.io/market/",
         chat: "https://t.me/NOOLSHY_CHAT",
         market: "https://noolshy.github.io/market/",
@@ -47,8 +47,8 @@ const members = [
         details: "Создатель и владелец NoolShy Fame. Занимаюсь развитием сообщества и модерацией. Отвечаю на вопросы по поводу добавления в список и других услуг.",
         skills: ["Администрирование", "Модерация", "Развитие сообщества"],
         socials: {
-            telegram: "@fedyklsh",
-            project: "https://t.me/adklsh",
+            telegram: "@vk1942",
+            project: "https://t.me/+Xp67bRCpAdBiMTYy",
             price: "https://noolshy.github.io/market/"
         }
     },
