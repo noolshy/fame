@@ -21,7 +21,7 @@ const members = [
     },
     {
         id: 1,
-        nickname: "Millen",
+        nickname: "Milen",
         username: "@vk1942",
         category: "Владелец",
         role: "Владелец",
